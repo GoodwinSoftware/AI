@@ -1,0 +1,85 @@
+\hypertarget{class_asteroid_field}{\section{Asteroid\+Field Class Reference}
+\label{class_asteroid_field}\index{Asteroid\+Field@{Asteroid\+Field}}
+}
+
+
+a drawable which overlays on the screen when the gamee is paused or the game is over  
+
+
+
+
+{\ttfamily \#include $<$Asteroid\+Field.\+h$>$}
+
+Inheritance diagram for Asteroid\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_asteroid_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_asteroid_field_a9daa07f82c9db387fa3612bed2c838a1}{\hyperlink{class_asteroid_field_a9daa07f82c9db387fa3612bed2c838a1}{Asteroid\+Field} ()}\label{class_asteroid_field_a9daa07f82c9db387fa3612bed2c838a1}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_asteroid_field_aabdc29f8581421b92fb498d2b2a1d879}{Asteroid\+Field} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Pos, const unsigned int kui\+Number\+Of\+Asteroids, const \hyperlink{class_vector2_d}{Vector2\+D}$<$ int $>$ \&k\+Size, const sf\+::\+Texture \&k\+Text)
+\begin{DoxyCompactList}\small\item\em Constructor which takes a position, number of asteroids, size of the asteroid field and a texture. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_asteroid_field_a4ba084eea3b8664c6b4fc6de61c9bc63}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\begin{DoxyCompactList}\small\item\em Draw the asteroid field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_asteroid_field_a91d936bf0a4f0ffce8caa3d310ae04b0}{std\+::vector$<$ std\+::shared\+\_\+ptr\\*
+$<$ \hyperlink{class_asteroid}{Asteroid} $>$ $>$ \hyperlink{class_asteroid_field_a91d936bf0a4f0ffce8caa3d310ae04b0}{g\+\_\+p\+Asteroids}}\label{class_asteroid_field_a91d936bf0a4f0ffce8caa3d310ae04b0}
+
+\begin{DoxyCompactList}\small\item\em Vector of pointers to asteroids. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a drawable which overlays on the screen when the gamee is paused or the game is over 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_asteroid_field_aabdc29f8581421b92fb498d2b2a1d879}{\index{Asteroid\+Field@{Asteroid\+Field}!Asteroid\+Field@{Asteroid\+Field}}
+\index{Asteroid\+Field@{Asteroid\+Field}!Asteroid\+Field@{Asteroid\+Field}}
+\subsubsection[{Asteroid\+Field}]{\setlength{\rightskip}{0pt plus 5cm}Asteroid\+Field\+::\+Asteroid\+Field (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Pos, }
+\item[{const unsigned int}]{kui\+Number\+Of\+Asteroids, }
+\item[{const {\bf Vector2\+D}$<$ int $>$ \&}]{k\+Size, }
+\item[{const sf\+::\+Texture \&}]{k\+Text}
+\end{DoxyParamCaption}
+)}}\label{class_asteroid_field_aabdc29f8581421b92fb498d2b2a1d879}
+
+
+Constructor which takes a position, number of asteroids, size of the asteroid field and a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Pos} & Position value \\
+\hline
+{\em kui\+Number\+Of\+Asteroids} & Number of asteroids in the field \\
+\hline
+{\em k\+Text} & Constructor which takes a position, number of asteroids, size of the asteroid field and a texture \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_asteroid_field_a4ba084eea3b8664c6b4fc6de61c9bc63}{\index{Asteroid\+Field@{Asteroid\+Field}!draw@{draw}}
+\index{draw@{draw}!Asteroid\+Field@{Asteroid\+Field}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Asteroid\+Field\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_asteroid_field_a4ba084eea3b8664c6b4fc6de61c9bc63}
+
+
+Draw the asteroid field. 
+
+$<$ Draw the asteroid field 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_asteroid_field_8h}{Asteroid\+Field.\+h}\item 
+src/\hyperlink{_asteroid_field_8cpp}{Asteroid\+Field.\+cpp}\end{DoxyCompactItemize}

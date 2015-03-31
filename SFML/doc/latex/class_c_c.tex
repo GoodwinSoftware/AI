@@ -1,0 +1,123 @@
+\hypertarget{class_c_c}{\section{C\+C Class Reference}
+\label{class_c_c}\index{C\+C@{C\+C}}
+}
+
+
+a circle shape which inherits from \hyperlink{class_physics_shape}{Physics\+Shape}  
+
+
+
+
+{\ttfamily \#include $<$C\+C.\+h$>$}
+
+Inheritance diagram for C\+C\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_c}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_c_a09cb54259760c46d58d5cb8719601af6}{\hyperlink{class_c_c_a09cb54259760c46d58d5cb8719601af6}{C\+C} ()}\label{class_c_c_a09cb54259760c46d58d5cb8719601af6}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_c_a4b3878b1ed23af886332d5d6d62d65c8}{C\+C} (const float kf\+Radius)
+\begin{DoxyCompactList}\small\item\em Constructor which takes a radius value. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_a9b26f4420fa65278f93048ae62d4c154}{set\+Radius} (const float kf\+New\+Radius)
+\begin{DoxyCompactList}\small\item\em Sets the radius of the circle. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_c_afe5cabbff942a13f20f5882258309fe3}{get\+Radius} () const 
+\begin{DoxyCompactList}\small\item\em Returns the radius of the circle. \end{DoxyCompactList}\item 
+virtual float \hyperlink{class_c_c_a26a40233a1bc78cd70bdcaff15ebc032}{compute\+Area} () const 
+\begin{DoxyCompactList}\small\item\em Computes the area of the shape. \end{DoxyCompactList}\item 
+\hypertarget{class_c_c_ac42c8589b3d366c4571c3898baa27b88}{virtual float \hyperlink{class_c_c_ac42c8589b3d366c4571c3898baa27b88}{compute\+Inertia} (const float kf\+Mass) const }\label{class_c_c_ac42c8589b3d366c4571c3898baa27b88}
+
+\begin{DoxyCompactList}\small\item\em Virtual function to compute the area of the shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_c_c_af17ca41bf83fe08dd75a5957f7670787}{m\+\_\+f\+Radius}
+\begin{DoxyCompactList}\small\item\em Computes the moment of inertia for the shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a circle shape which inherits from \hyperlink{class_physics_shape}{Physics\+Shape} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_c_a4b3878b1ed23af886332d5d6d62d65c8}{\index{C\+C@{C\+C}!C\+C@{C\+C}}
+\index{C\+C@{C\+C}!C\+C@{C\+C}}
+\subsubsection[{C\+C}]{\setlength{\rightskip}{0pt plus 5cm}C\+C\+::\+C\+C (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Radius}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_a4b3878b1ed23af886332d5d6d62d65c8}
+
+
+Constructor which takes a radius value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+Radius} & Constructor which takes a radius value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_c_a26a40233a1bc78cd70bdcaff15ebc032}{\index{C\+C@{C\+C}!compute\+Area@{compute\+Area}}
+\index{compute\+Area@{compute\+Area}!C\+C@{C\+C}}
+\subsubsection[{compute\+Area}]{\setlength{\rightskip}{0pt plus 5cm}float C\+C\+::compute\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_c_a26a40233a1bc78cd70bdcaff15ebc032}
+
+
+Computes the area of the shape. 
+
+$<$ Computes the moment of inertia for the shape 
+
+Reimplemented from \hyperlink{class_physics_shape_ae7bd37cc6d1c414e4d92649dba3cd791}{Physics\+Shape}.
+
+\hypertarget{class_c_c_afe5cabbff942a13f20f5882258309fe3}{\index{C\+C@{C\+C}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!C\+C@{C\+C}}
+\subsubsection[{get\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}float C\+C\+::get\+Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_c_c_afe5cabbff942a13f20f5882258309fe3}
+
+
+Returns the radius of the circle. 
+
+$<$ Returns the radius of the circle \hypertarget{class_c_c_a9b26f4420fa65278f93048ae62d4c154}{\index{C\+C@{C\+C}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!C\+C@{C\+C}}
+\subsubsection[{set\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+::set\+Radius (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+New\+Radius}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_a9b26f4420fa65278f93048ae62d4c154}
+
+
+Sets the radius of the circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+New\+Radius} & Returns the radius of the circle \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_c_af17ca41bf83fe08dd75a5957f7670787}{\index{C\+C@{C\+C}!m\+\_\+f\+Radius@{m\+\_\+f\+Radius}}
+\index{m\+\_\+f\+Radius@{m\+\_\+f\+Radius}!C\+C@{C\+C}}
+\subsubsection[{m\+\_\+f\+Radius}]{\setlength{\rightskip}{0pt plus 5cm}float C\+C\+::m\+\_\+f\+Radius\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_c_af17ca41bf83fe08dd75a5957f7670787}
+
+
+Computes the moment of inertia for the shape. 
+
+Circle radius in meters 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_c_c_8h}{C\+C.\+h}\item 
+src/\hyperlink{_c_c_8cpp}{C\+C.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{class_paddle}{\section{Paddle Class Reference}
+\label{class_paddle}\index{Paddle@{Paddle}}
+}
+
+
+a paddle with a physics body  
+
+
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+Inheritance diagram for Paddle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paddle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_paddle_a53895671ddfde9ba668546065ec4f164}{\hyperlink{class_paddle_a53895671ddfde9ba668546065ec4f164}{Paddle} ()}\label{class_paddle_a53895671ddfde9ba668546065ec4f164}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_paddle_aa37bdcd24ceb267b5b2b7055c1002bb5}{{\bfseries Paddle} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Pos, const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Half\+Extents, const float kf\+Angle)}\label{class_paddle_aa37bdcd24ceb267b5b2b7055c1002bb5}
+
+\item 
+\hypertarget{class_paddle_a926ced17de3d812eddd5d6aa48118aba}{void \hyperlink{class_paddle_a926ced17de3d812eddd5d6aa48118aba}{set\+Left} ()}\label{class_paddle_a926ced17de3d812eddd5d6aa48118aba}
+
+\begin{DoxyCompactList}\small\item\em Set as left paddle. \end{DoxyCompactList}\item 
+\hypertarget{class_paddle_a21f17284347b540a210f669e46fb7033}{void \hyperlink{class_paddle_a21f17284347b540a210f669e46fb7033}{set\+Right} ()}\label{class_paddle_a21f17284347b540a210f669e46fb7033}
+
+\begin{DoxyCompactList}\small\item\em Set as right paddle. \end{DoxyCompactList}\item 
+\hypertarget{class_paddle_a9446a94c141d687ea3224fdba2dc7fa0}{void \hyperlink{class_paddle_a9446a94c141d687ea3224fdba2dc7fa0}{flip\+Up} ()}\label{class_paddle_a9446a94c141d687ea3224fdba2dc7fa0}
+
+\begin{DoxyCompactList}\small\item\em Flip the paddle up. \end{DoxyCompactList}\item 
+\hypertarget{class_paddle_a3bf356d44b28157c013240d3dde6f9d5}{void \hyperlink{class_paddle_a3bf356d44b28157c013240d3dde6f9d5}{flip\+Down} ()}\label{class_paddle_a3bf356d44b28157c013240d3dde6f9d5}
+
+\begin{DoxyCompactList}\small\item\em Flip the paddle down. \end{DoxyCompactList}\item 
+\hypertarget{class_paddle_a4e9ab8e3c5d087a8d23beed16f38dd00}{void \hyperlink{class_paddle_a4e9ab8e3c5d087a8d23beed16f38dd00}{transform} ()}\label{class_paddle_a4e9ab8e3c5d087a8d23beed16f38dd00}
+
+\begin{DoxyCompactList}\small\item\em Transform the graphics. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_paddle_a569a4a016b265cb3af3012061adafdea}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\begin{DoxyCompactList}\small\item\em Draw the paddle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_paddle_aa1010d0654e87e6616bdc246f04d3ad6}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \hyperlink{class_paddle_aa1010d0654e87e6616bdc246f04d3ad6}{g\+\_\+p\+Body}}\label{class_paddle_aa1010d0654e87e6616bdc246f04d3ad6}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the physics body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a paddle with a physics body 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_paddle_a569a4a016b265cb3af3012061adafdea}{\index{Paddle@{Paddle}!draw@{draw}}
+\index{draw@{draw}!Paddle@{Paddle}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Paddle\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_paddle_a569a4a016b265cb3af3012061adafdea}
+
+
+Draw the paddle. 
+
+$<$ Draw the particle 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_paddle_8h}{Paddle.\+h}\item 
+src/\hyperlink{_paddle_8cpp}{Paddle.\+cpp}\end{DoxyCompactItemize}

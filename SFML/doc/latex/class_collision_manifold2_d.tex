@@ -1,0 +1,123 @@
+\hypertarget{class_collision_manifold2_d}{\section{Collision\+Manifold2\+D Class Reference}
+\label{class_collision_manifold2_d}\index{Collision\+Manifold2\+D@{Collision\+Manifold2\+D}}
+}
+
+
+Manifold generation for collisions, checks the collision and resolves it.  
+
+
+
+
+{\ttfamily \#include $<$Collision2\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_collision_manifold2_d_af6120e277cf4d8d5b6cc2a67e621c45d}{Collision\+Manifold2\+D} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \&kp\+Body1, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \&kp\+Body2)
+\item 
+\hyperlink{struct_clamp_intersecting}{Clamp\+Intersecting} \hyperlink{class_collision_manifold2_d_a0f1383fe1b5c73b8d638b2baaf08219f}{Clamp} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Dist, const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Half\+Extents) const 
+\begin{DoxyCompactList}\small\item\em Constructor which takes two body pointers. \end{DoxyCompactList}\item 
+const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_collision_manifold2_d_a417217e2fcbb175cbb18577760466ea8}{distance} () const 
+\begin{DoxyCompactList}\small\item\em Distance between the bodies. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a2cc491b84be92c80fb1ab17eb4140c7e}{bool \hyperlink{class_collision_manifold2_d_a2cc491b84be92c80fb1ab17eb4140c7e}{check\+Collision} ()}\label{class_collision_manifold2_d_a2cc491b84be92c80fb1ab17eb4140c7e}
+
+\begin{DoxyCompactList}\small\item\em Check if the objects are colliding. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a0037327cbc9544ba24a6aafb5dec5855}{bool \hyperlink{class_collision_manifold2_d_a0037327cbc9544ba24a6aafb5dec5855}{A\+A\+B\+Bvs\+A\+A\+B\+B} ()}\label{class_collision_manifold2_d_a0037327cbc9544ba24a6aafb5dec5855}
+
+\begin{DoxyCompactList}\small\item\em Check collision between two A\+A\+B\+Bs. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a3f9c9ef16199d2ed12ff50bd7b5cccac}{bool \hyperlink{class_collision_manifold2_d_a3f9c9ef16199d2ed12ff50bd7b5cccac}{Circle\+Vs\+Circle} ()}\label{class_collision_manifold2_d_a3f9c9ef16199d2ed12ff50bd7b5cccac}
+
+\begin{DoxyCompactList}\small\item\em Check collision between two Circles. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a48419f339540ce108582ed1ba28021a7}{bool \hyperlink{class_collision_manifold2_d_a48419f339540ce108582ed1ba28021a7}{A\+A\+B\+B\+Vs\+Circle} ()}\label{class_collision_manifold2_d_a48419f339540ce108582ed1ba28021a7}
+
+\begin{DoxyCompactList}\small\item\em Check collision between an \hyperlink{class_a_a_b_b}{A\+A\+B\+B} and circle. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_aac3dc83ebb8919c2ea37902dff315c93}{bool \hyperlink{class_collision_manifold2_d_aac3dc83ebb8919c2ea37902dff315c93}{O\+B\+B\+Vs\+Circle} ()}\label{class_collision_manifold2_d_aac3dc83ebb8919c2ea37902dff315c93}
+
+\begin{DoxyCompactList}\small\item\em Check collision between an \hyperlink{class_o_b_b}{O\+B\+B} and circle. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_ad6392d7e37396c279ec3f3bd926d1c1a}{void \hyperlink{class_collision_manifold2_d_ad6392d7e37396c279ec3f3bd926d1c1a}{resolve\+Rotational\+Collision} ()}\label{class_collision_manifold2_d_ad6392d7e37396c279ec3f3bd926d1c1a}
+
+\begin{DoxyCompactList}\small\item\em Resolve a collision. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a427412801fdb0747a9f56923a87642f2}{void \hyperlink{class_collision_manifold2_d_a427412801fdb0747a9f56923a87642f2}{Positional\+Correction} ()}\label{class_collision_manifold2_d_a427412801fdb0747a9f56923a87642f2}
+
+\begin{DoxyCompactList}\small\item\em Apply position correction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_collision_manifold2_d_a3cb8f07a11c1510e90ecfd7057bac132}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \hyperlink{class_collision_manifold2_d_a3cb8f07a11c1510e90ecfd7057bac132}{g\+\_\+p\+Body\+A}}\label{class_collision_manifold2_d_a3cb8f07a11c1510e90ecfd7057bac132}
+
+\begin{DoxyCompactList}\small\item\em First body in the manifold. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a984686fec2c7460f9479c12987392ada}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \hyperlink{class_collision_manifold2_d_a984686fec2c7460f9479c12987392ada}{g\+\_\+p\+Body\+B}}\label{class_collision_manifold2_d_a984686fec2c7460f9479c12987392ada}
+
+\begin{DoxyCompactList}\small\item\em Second body in the manifold. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a6c9c40573b42b63f54a44eed63f279b0}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_collision_manifold2_d_a6c9c40573b42b63f54a44eed63f279b0}{g\+\_\+\+Point\+Of\+Contact}}\label{class_collision_manifold2_d_a6c9c40573b42b63f54a44eed63f279b0}
+
+\begin{DoxyCompactList}\small\item\em Collision contact point. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_af11f8fdabd6c64cd5637cfbb6de4777d}{float \hyperlink{class_collision_manifold2_d_af11f8fdabd6c64cd5637cfbb6de4777d}{g\+\_\+f\+Radius}}\label{class_collision_manifold2_d_af11f8fdabd6c64cd5637cfbb6de4777d}
+
+\begin{DoxyCompactList}\small\item\em Radius sum set when an object isn't colliding with a body with an attractive value. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a7723c5a4ef26168b35d68c2d437c7dde}{float \hyperlink{class_collision_manifold2_d_a7723c5a4ef26168b35d68c2d437c7dde}{g\+\_\+f\+Penetration}}\label{class_collision_manifold2_d_a7723c5a4ef26168b35d68c2d437c7dde}
+
+\begin{DoxyCompactList}\small\item\em Penetration of the collision. \end{DoxyCompactList}\item 
+\hypertarget{class_collision_manifold2_d_a546b4ca4cca3062814ad99695dc38c26}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_collision_manifold2_d_a546b4ca4cca3062814ad99695dc38c26}{g\+\_\+\+Normal}}\label{class_collision_manifold2_d_a546b4ca4cca3062814ad99695dc38c26}
+
+\begin{DoxyCompactList}\small\item\em Collision normal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manifold generation for collisions, checks the collision and resolves it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_collision_manifold2_d_af6120e277cf4d8d5b6cc2a67e621c45d}{\index{Collision\+Manifold2\+D@{Collision\+Manifold2\+D}!Collision\+Manifold2\+D@{Collision\+Manifold2\+D}}
+\index{Collision\+Manifold2\+D@{Collision\+Manifold2\+D}!Collision\+Manifold2\+D@{Collision\+Manifold2\+D}}
+\subsubsection[{Collision\+Manifold2\+D}]{\setlength{\rightskip}{0pt plus 5cm}Collision\+Manifold2\+D\+::\+Collision\+Manifold2\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Body2\+D} $>$ \&}]{kp\+Body1, }
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Body2\+D} $>$ \&}]{kp\+Body2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_collision_manifold2_d_af6120e277cf4d8d5b6cc2a67e621c45d}
+
+\begin{DoxyParams}{Parameters}
+{\em kp\+Body2} & Second body \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_collision_manifold2_d_a0f1383fe1b5c73b8d638b2baaf08219f}{\index{Collision\+Manifold2\+D@{Collision\+Manifold2\+D}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Collision\+Manifold2\+D@{Collision\+Manifold2\+D}}
+\subsubsection[{Clamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clamp\+Intersecting} Collision\+Manifold2\+D\+::\+Clamp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Dist, }
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Half\+Extents}
+\end{DoxyParamCaption}
+) const}}\label{class_collision_manifold2_d_a0f1383fe1b5c73b8d638b2baaf08219f}
+
+
+Constructor which takes two body pointers. 
+
+$<$ Clamp a circle to the half extents of a box
+
+Clamp a circle to the half extents of a box 
+\begin{DoxyParams}{Parameters}
+{\em k\+Dist} & Distance \\
+\hline
+{\em k\+Half\+Extents} & Halfextents \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_collision_manifold2_d_a417217e2fcbb175cbb18577760466ea8}{\index{Collision\+Manifold2\+D@{Collision\+Manifold2\+D}!distance@{distance}}
+\index{distance@{distance}!Collision\+Manifold2\+D@{Collision\+Manifold2\+D}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector2\+D}$<$ float $>$ Collision\+Manifold2\+D\+::distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_collision_manifold2_d_a417217e2fcbb175cbb18577760466ea8}
+
+
+Distance between the bodies. 
+
+$<$ Distance between the bodies 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_collision2_d_8h}{Collision2\+D.\+h}\item 
+src/\hyperlink{collision2_d_8cpp}{collision2\+D.\+cpp}\end{DoxyCompactItemize}

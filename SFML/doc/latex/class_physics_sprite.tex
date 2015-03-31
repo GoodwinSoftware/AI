@@ -1,0 +1,86 @@
+\hypertarget{class_physics_sprite}{\section{Physics\+Sprite Class Reference}
+\label{class_physics_sprite}\index{Physics\+Sprite@{Physics\+Sprite}}
+}
+
+
+A drawable physics object.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Sprite.\+h$>$}
+
+Inheritance diagram for Physics\+Sprite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_physics_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_physics_sprite_a811ffe62810312784c4e632b54fadcdd}{\hyperlink{class_physics_sprite_a811ffe62810312784c4e632b54fadcdd}{Physics\+Sprite} ()}\label{class_physics_sprite_a811ffe62810312784c4e632b54fadcdd}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_physics_sprite_a5bceac4964f6995180af4ed21fcd1ae5}{set\+Texture} (const sf\+::\+Texture \&tex)
+\begin{DoxyCompactList}\small\item\em Sets the texture of the sprite. \end{DoxyCompactList}\item 
+\hypertarget{class_physics_sprite_a97720abd69161c946b159d2e5e7fca36}{virtual void \hyperlink{class_physics_sprite_a97720abd69161c946b159d2e5e7fca36}{transform} ()}\label{class_physics_sprite_a97720abd69161c946b159d2e5e7fca36}
+
+\begin{DoxyCompactList}\small\item\em Transform the sprite. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_physics_sprite_a96d93c233739c0b4ec3bce383db4b84f}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\begin{DoxyCompactList}\small\item\em Draw the physics sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_physics_sprite_a763f9c183b5ddd1ea41992e011738792}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \hyperlink{class_physics_sprite_a763f9c183b5ddd1ea41992e011738792}{g\+\_\+p\+Body}}\label{class_physics_sprite_a763f9c183b5ddd1ea41992e011738792}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the physics body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_physics_sprite_a307206e2e32121fba9c35a0ff5156bf0}{sf\+::\+Texture \hyperlink{class_physics_sprite_a307206e2e32121fba9c35a0ff5156bf0}{m\+\_\+texture}}\label{class_physics_sprite_a307206e2e32121fba9c35a0ff5156bf0}
+
+\begin{DoxyCompactList}\small\item\em Sprite texture. \end{DoxyCompactList}\item 
+\hypertarget{class_physics_sprite_a956c25d8bd5b34f697cc33eedc4f5aba}{sf\+::\+Sprite \hyperlink{class_physics_sprite_a956c25d8bd5b34f697cc33eedc4f5aba}{m\+\_\+sprite}}\label{class_physics_sprite_a956c25d8bd5b34f697cc33eedc4f5aba}
+
+\begin{DoxyCompactList}\small\item\em Sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A drawable physics object. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_physics_sprite_a96d93c233739c0b4ec3bce383db4b84f}{\index{Physics\+Sprite@{Physics\+Sprite}!draw@{draw}}
+\index{draw@{draw}!Physics\+Sprite@{Physics\+Sprite}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+Sprite\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_physics_sprite_a96d93c233739c0b4ec3bce383db4b84f}
+
+
+Draw the physics sprite. 
+
+$<$ Draw the physics sprite \hypertarget{class_physics_sprite_a5bceac4964f6995180af4ed21fcd1ae5}{\index{Physics\+Sprite@{Physics\+Sprite}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!Physics\+Sprite@{Physics\+Sprite}}
+\subsubsection[{set\+Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Physics\+Sprite\+::set\+Texture (
+\begin{DoxyParamCaption}
+\item[{const sf\+::\+Texture \&}]{tex}
+\end{DoxyParamCaption}
+)}}\label{class_physics_sprite_a5bceac4964f6995180af4ed21fcd1ae5}
+
+
+Sets the texture of the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & New texture \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_physics_sprite_8h}{Physics\+Sprite.\+h}\item 
+src/\hyperlink{_physics_sprite_8cpp}{Physics\+Sprite.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{class_rotation_matrix}{\section{Rotation\+Matrix Class Reference}
+\label{class_rotation_matrix}\index{Rotation\+Matrix@{Rotation\+Matrix}}
+}
+
+
+A 2\+D rotation matrix.  
+
+
+
+
+{\ttfamily \#include $<$Rotation\+Matrix.\+h$>$}
+
+Inheritance diagram for Rotation\+Matrix\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rotation_matrix}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_rotation_matrix_a97bcf26df695672b768ec0009355b0fb}{\hyperlink{class_rotation_matrix_a97bcf26df695672b768ec0009355b0fb}{Rotation\+Matrix} (const float kf\+Radians)}\label{class_rotation_matrix_a97bcf26df695672b768ec0009355b0fb}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_rotation_matrix_a40d79c7eef78770b19024dc6776ee8c3}{set\+Angle\+Deg} (const float kf\+Degrees)
+\begin{DoxyCompactList}\small\item\em Constructor which takes a radians value. \end{DoxyCompactList}\item 
+void \hyperlink{class_rotation_matrix_a49c861f624a5a251a013684824cd51de}{set\+Angle\+Rad} (const float kf\+Radians)
+\begin{DoxyCompactList}\small\item\em Takes an angle in radians and sets the angle. \end{DoxyCompactList}\item 
+float \hyperlink{class_rotation_matrix_a012ca643690e92bf67357f703629010e}{get\+Angle\+Rad} () const 
+\begin{DoxyCompactList}\small\item\em Returns the angle in radians. \end{DoxyCompactList}\item 
+float \hyperlink{class_rotation_matrix_affe59fa1cb44c08e8341e46383f137c3}{get\+Angle\+Deg} () const 
+\begin{DoxyCompactList}\small\item\em Returns the angle in degrees. \end{DoxyCompactList}\item 
+\hypertarget{class_rotation_matrix_a5b1f1ef7de82392ae1f295c8356b3261}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ {\bfseries column1} () const }\label{class_rotation_matrix_a5b1f1ef7de82392ae1f295c8356b3261}
+
+\item 
+\hypertarget{class_rotation_matrix_af54d2979b5913610f33e1867cd8635dd}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_rotation_matrix_af54d2979b5913610f33e1867cd8635dd}{column2} () const }\label{class_rotation_matrix_af54d2979b5913610f33e1867cd8635dd}
+
+\begin{DoxyCompactList}\small\item\em Returns the first column as a vector. \end{DoxyCompactList}\item 
+\hypertarget{class_rotation_matrix_ae1facb90c5f863cf19706211d7ea8ac9}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_rotation_matrix_ae1facb90c5f863cf19706211d7ea8ac9}{row1} () const }\label{class_rotation_matrix_ae1facb90c5f863cf19706211d7ea8ac9}
+
+\begin{DoxyCompactList}\small\item\em Returns the second column as a vector. \end{DoxyCompactList}\item 
+\hypertarget{class_rotation_matrix_a81a16a06bfff94802cec97d6ff93c8e4}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_rotation_matrix_a81a16a06bfff94802cec97d6ff93c8e4}{row2} () const }\label{class_rotation_matrix_a81a16a06bfff94802cec97d6ff93c8e4}
+
+\begin{DoxyCompactList}\small\item\em Returns the first row as a vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_rotation_matrix_acf4a933168e87c20a622da9ddddc2022}{rotate\+Vector} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Vec) const 
+\begin{DoxyCompactList}\small\item\em Returns the second row as a vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_rotation_matrix_ad4a0fc37c2a155029bbb5f958ac0e1f7}{inverse\+Rotate\+Vector} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Vec) const 
+\begin{DoxyCompactList}\small\item\em Applies the inverse rotation to a vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 2\+D rotation matrix. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rotation_matrix_affe59fa1cb44c08e8341e46383f137c3}{\index{Rotation\+Matrix@{Rotation\+Matrix}!get\+Angle\+Deg@{get\+Angle\+Deg}}
+\index{get\+Angle\+Deg@{get\+Angle\+Deg}!Rotation\+Matrix@{Rotation\+Matrix}}
+\subsubsection[{get\+Angle\+Deg}]{\setlength{\rightskip}{0pt plus 5cm}float Rotation\+Matrix\+::get\+Angle\+Deg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_rotation_matrix_affe59fa1cb44c08e8341e46383f137c3}
+
+
+Returns the angle in degrees. 
+
+$<$ Returns the angle in degrees \hypertarget{class_rotation_matrix_a012ca643690e92bf67357f703629010e}{\index{Rotation\+Matrix@{Rotation\+Matrix}!get\+Angle\+Rad@{get\+Angle\+Rad}}
+\index{get\+Angle\+Rad@{get\+Angle\+Rad}!Rotation\+Matrix@{Rotation\+Matrix}}
+\subsubsection[{get\+Angle\+Rad}]{\setlength{\rightskip}{0pt plus 5cm}float Rotation\+Matrix\+::get\+Angle\+Rad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_rotation_matrix_a012ca643690e92bf67357f703629010e}
+
+
+Returns the angle in radians. 
+
+$<$ Returns the angle in radians \hypertarget{class_rotation_matrix_ad4a0fc37c2a155029bbb5f958ac0e1f7}{\index{Rotation\+Matrix@{Rotation\+Matrix}!inverse\+Rotate\+Vector@{inverse\+Rotate\+Vector}}
+\index{inverse\+Rotate\+Vector@{inverse\+Rotate\+Vector}!Rotation\+Matrix@{Rotation\+Matrix}}
+\subsubsection[{inverse\+Rotate\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\+D}$<$ float $>$ Rotation\+Matrix\+::inverse\+Rotate\+Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Vec}
+\end{DoxyParamCaption}
+) const}}\label{class_rotation_matrix_ad4a0fc37c2a155029bbb5f958ac0e1f7}
+
+
+Applies the inverse rotation to a vector. 
+
+$<$ Applies the inverse rotation to a vector \hypertarget{class_rotation_matrix_acf4a933168e87c20a622da9ddddc2022}{\index{Rotation\+Matrix@{Rotation\+Matrix}!rotate\+Vector@{rotate\+Vector}}
+\index{rotate\+Vector@{rotate\+Vector}!Rotation\+Matrix@{Rotation\+Matrix}}
+\subsubsection[{rotate\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\+D}$<$ float $>$ Rotation\+Matrix\+::rotate\+Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Vec}
+\end{DoxyParamCaption}
+) const}}\label{class_rotation_matrix_acf4a933168e87c20a622da9ddddc2022}
+
+
+Returns the second row as a vector. 
+
+$<$ Applies the rotation to a vector
+
+Applies the rotation to a vector \hypertarget{class_rotation_matrix_a40d79c7eef78770b19024dc6776ee8c3}{\index{Rotation\+Matrix@{Rotation\+Matrix}!set\+Angle\+Deg@{set\+Angle\+Deg}}
+\index{set\+Angle\+Deg@{set\+Angle\+Deg}!Rotation\+Matrix@{Rotation\+Matrix}}
+\subsubsection[{set\+Angle\+Deg}]{\setlength{\rightskip}{0pt plus 5cm}void Rotation\+Matrix\+::set\+Angle\+Deg (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Degrees}
+\end{DoxyParamCaption}
+)}}\label{class_rotation_matrix_a40d79c7eef78770b19024dc6776ee8c3}
+
+
+Constructor which takes a radians value. 
+
+Takes an angle in degrees and sets the angle 
+\begin{DoxyParams}{Parameters}
+{\em kf\+Degrees} & Takes an angle in degrees and sets the angle \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rotation_matrix_a49c861f624a5a251a013684824cd51de}{\index{Rotation\+Matrix@{Rotation\+Matrix}!set\+Angle\+Rad@{set\+Angle\+Rad}}
+\index{set\+Angle\+Rad@{set\+Angle\+Rad}!Rotation\+Matrix@{Rotation\+Matrix}}
+\subsubsection[{set\+Angle\+Rad}]{\setlength{\rightskip}{0pt plus 5cm}void Rotation\+Matrix\+::set\+Angle\+Rad (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Radians}
+\end{DoxyParamCaption}
+)}}\label{class_rotation_matrix_a49c861f624a5a251a013684824cd51de}
+
+
+Takes an angle in radians and sets the angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+Radians} & Takes an angle in radians and sets the angle \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_rotation_matrix_8h}{Rotation\+Matrix.\+h}\item 
+src/\hyperlink{_rotation_matrix_8cpp}{Rotation\+Matrix.\+cpp}\end{DoxyCompactItemize}

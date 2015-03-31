@@ -1,0 +1,75 @@
+\hypertarget{class_game_scene}{\section{Game\+Scene Class Reference}
+\label{class_game_scene}\index{Game\+Scene@{Game\+Scene}}
+}
+
+
+a game scene with a physics world  
+
+
+
+
+{\ttfamily \#include $<$Game\+Scene.\+h$>$}
+
+Inheritance diagram for Game\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_scene_ad0aa729b9dba3a8e09b2a8a61fcb3dce}{virtual void {\bfseries update} ()}\label{class_game_scene_ad0aa729b9dba3a8e09b2a8a61fcb3dce}
+
+\item 
+virtual void \hyperlink{class_game_scene_a9cf68fbf8e0805cbb1618a71e04d7fa4}{event} (sf\+::\+Event event)
+\begin{DoxyCompactList}\small\item\em Update the game logic. \end{DoxyCompactList}\item 
+\hypertarget{class_game_scene_a9b7472887a15c9c93f020d56872f8968}{virtual void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const }\label{class_game_scene_a9b7472887a15c9c93f020d56872f8968}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_scene_a887137cff9aa0c98abf922bffdc244dc}{sf\+::\+Clock \hyperlink{class_game_scene_a887137cff9aa0c98abf922bffdc244dc}{m\+\_\+timer}}\label{class_game_scene_a887137cff9aa0c98abf922bffdc244dc}
+
+\begin{DoxyCompactList}\small\item\em Gameloop timer. \end{DoxyCompactList}\item 
+\hypertarget{class_game_scene_ac1e2df8edcb25aaeddc2b1805e5c48d1}{float \hyperlink{class_game_scene_ac1e2df8edcb25aaeddc2b1805e5c48d1}{m\+\_\+f\+Accumulator}}\label{class_game_scene_ac1e2df8edcb25aaeddc2b1805e5c48d1}
+
+\begin{DoxyCompactList}\small\item\em Time accumulator. \end{DoxyCompactList}\item 
+\hypertarget{class_game_scene_a90073e2f9e2e404c04ccfa36039acade}{float \hyperlink{class_game_scene_a90073e2f9e2e404c04ccfa36039acade}{m\+\_\+f\+Previous\+Frame}}\label{class_game_scene_a90073e2f9e2e404c04ccfa36039acade}
+
+\begin{DoxyCompactList}\small\item\em Previous frame time. \end{DoxyCompactList}\item 
+\hypertarget{class_game_scene_acf69304d0b55c0190a70d349aba63840}{\hyperlink{class_world2_d}{World2\+D} \hyperlink{class_game_scene_acf69304d0b55c0190a70d349aba63840}{m\+\_\+\+World}}\label{class_game_scene_acf69304d0b55c0190a70d349aba63840}
+
+\begin{DoxyCompactList}\small\item\em Physics world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a game scene with a physics world 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_scene_a9cf68fbf8e0805cbb1618a71e04d7fa4}{\index{Game\+Scene@{Game\+Scene}!event@{event}}
+\index{event@{event}!Game\+Scene@{Game\+Scene}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Game\+Scene\+::event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_game_scene_a9cf68fbf8e0805cbb1618a71e04d7fa4}
+
+
+Update the game logic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Handles S\+F\+M\+L events \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_pinball_scene_a57947a5d74f53f73a40df59de2c72078}{Pinball\+Scene}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_game_scene_8h}{Game\+Scene.\+h}\end{DoxyCompactItemize}

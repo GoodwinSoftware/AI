@@ -1,0 +1,373 @@
+\hypertarget{class_vector3_d}{\section{Vector3\+D$<$ N $>$ Class Template Reference}
+\label{class_vector3_d}\index{Vector3\+D$<$ N $>$@{Vector3\+D$<$ N $>$}}
+}
+
+
+A 3\+D vector.  
+
+
+
+
+{\ttfamily \#include $<$Vector3\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector3_d_a3f09cc868db69de841d2b66c09b1c949}{Vector3\+D} (const N k\+X, const N k\+Y, const N k\+Z)
+\begin{DoxyCompactList}\small\item\em Default constuctor (sets all values to 0) \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d_aa7cb6c808761b775a5fcf37a2e3ddb79}{$\sim$\+Vector3\+D} ()
+\begin{DoxyCompactList}\small\item\em Constructor which takes X, Y and Z values. \end{DoxyCompactList}\item 
+void \hyperlink{class_vector3_d_a81aa36b296f62c3b124198d52e06e88e}{set} (const N k\+X, const N k\+Y, const N k\+Z)
+\item 
+float \hyperlink{class_vector3_d_ae4b264f0d1cc18bbe4f135ba623c7767}{dot\+Product} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Sets the X, Y \& Z values. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_ab219d86f968d30e7c95783eefd21246f}{cross\+Product} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Returns the dot product of the current vector and another vector. \end{DoxyCompactList}\item 
+\hypertarget{class_vector3_d_aa8d6b91fa4840dc252f563038dda8da6}{N \hyperlink{class_vector3_d_aa8d6b91fa4840dc252f563038dda8da6}{x} () const }\label{class_vector3_d_aa8d6b91fa4840dc252f563038dda8da6}
+
+\begin{DoxyCompactList}\small\item\em Returns the cross product of the current vector and another vector. \end{DoxyCompactList}\item 
+\hypertarget{class_vector3_d_a9d39ee3db89b1c7ea24aaff57094e697}{N \hyperlink{class_vector3_d_a9d39ee3db89b1c7ea24aaff57094e697}{y} () const }\label{class_vector3_d_a9d39ee3db89b1c7ea24aaff57094e697}
+
+\begin{DoxyCompactList}\small\item\em Returns the X value of the vector. \end{DoxyCompactList}\item 
+\hypertarget{class_vector3_d_aa3ea7b43e9b16edf9741bdbc29e1b209}{N \hyperlink{class_vector3_d_aa3ea7b43e9b16edf9741bdbc29e1b209}{z} () const }\label{class_vector3_d_aa3ea7b43e9b16edf9741bdbc29e1b209}
+
+\begin{DoxyCompactList}\small\item\em Returns the Y value of the vector. \end{DoxyCompactList}\item 
+\hypertarget{class_vector3_d_a223032e8f17627ee4bbf43f5354f2def}{float \hyperlink{class_vector3_d_a223032e8f17627ee4bbf43f5354f2def}{magnitude} () const }\label{class_vector3_d_a223032e8f17627ee4bbf43f5354f2def}
+
+\begin{DoxyCompactList}\small\item\em Returns the Z value of the vector. \end{DoxyCompactList}\item 
+\hypertarget{class_vector3_d_a62d130ec8cf7d9a19cdd66bb111bc397}{float \hyperlink{class_vector3_d_a62d130ec8cf7d9a19cdd66bb111bc397}{magnitude\+Squared} () const }\label{class_vector3_d_a62d130ec8cf7d9a19cdd66bb111bc397}
+
+\begin{DoxyCompactList}\small\item\em Returns the magnitude of the vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_ae65b3804e658444200cc8434ac929984}{operator-\/} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Returns the square of the length of the vector3\+D. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_a3a49109e80f54f19488ab04e2e6a793d}{operator-\/} (const N k\+Number) const 
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector minus another vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \& \hyperlink{class_vector3_d_a176342924211b76b6d91e20e6c8edca3}{operator-\/=} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other)
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector minus a float. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_a1ea6c7657591f53033fa520f07e424ed}{operator+} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Assigns the current vector minus another vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_a10d2178a6725fd7a198e3379f24b8079}{operator+} (const N k\+Number) const 
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector plus another vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \& \hyperlink{class_vector3_d_ada52c0527f56d8cdee2d5824fec98a26}{operator+=} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other)
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector plus a float. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_aa4ea93d3a84407ba621cdfb035592302}{operator$\ast$} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Adds another vector to the current vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \& \hyperlink{class_vector3_d_a393c3f60e01027934288918874145bbb}{operator$\ast$=} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other)
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector multiplied by another vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_a2d4d0cbc6bf028d71e1f78f5937c7f6d}{operator/} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Multiplies the current vector by another vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_ab83dcb3a0944eb24f08e2e5e49a50a81}{operator$\ast$} (const N k\+Scalar) const 
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector divided by another vector. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \hyperlink{class_vector3_d_a139ffe885d7d5d86a3f8e534e701d261}{operator/} (const N k\+Scalar) const 
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector multiplied by a float. \end{DoxyCompactList}\item 
+\hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \& \hyperlink{class_vector3_d_a6b236a0d11110d391c8b9832496d9b29}{operator=} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other)
+\begin{DoxyCompactList}\small\item\em Returns the value of the current vector divided by a float. \end{DoxyCompactList}\item 
+bool \hyperlink{class_vector3_d_a829238079c28e7b21ffa2bbda90f084e}{operator==} (const \hyperlink{class_vector3_d}{Vector3\+D}$<$ N $>$ \&k\+Other) const 
+\begin{DoxyCompactList}\small\item\em Assigns the current vector to the values of another vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class N$>$class Vector3\+D$<$ N $>$}
+
+A 3\+D vector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vector3_d_a3f09cc868db69de841d2b66c09b1c949}{\index{Vector3\+D@{Vector3\+D}!Vector3\+D@{Vector3\+D}}
+\index{Vector3\+D@{Vector3\+D}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{Vector3\+D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$ N $>$\+::{\bf Vector3\+D} (
+\begin{DoxyParamCaption}
+\item[{const N}]{k\+X, }
+\item[{const N}]{k\+Y, }
+\item[{const N}]{k\+Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a3f09cc868db69de841d2b66c09b1c949}
+
+
+Default constuctor (sets all values to 0) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+X} & X value \\
+\hline
+{\em k\+Y} & Y value \\
+\hline
+{\em k\+Z} & Z value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_aa7cb6c808761b775a5fcf37a2e3ddb79}{\index{Vector3\+D@{Vector3\+D}!````~Vector3\+D@{$\sim$\+Vector3\+D}}
+\index{````~Vector3\+D@{$\sim$\+Vector3\+D}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{$\sim$\+Vector3\+D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$ N $>$\+::$\sim${\bf Vector3\+D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vector3_d_aa7cb6c808761b775a5fcf37a2e3ddb79}
+
+
+Constructor which takes X, Y and Z values. 
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vector3_d_ab219d86f968d30e7c95783eefd21246f}{\index{Vector3\+D@{Vector3\+D}!cross\+Product@{cross\+Product}}
+\index{cross\+Product@{cross\+Product}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{cross\+Product}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::cross\+Product (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_ab219d86f968d30e7c95783eefd21246f}
+
+
+Returns the dot product of the current vector and another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_ae4b264f0d1cc18bbe4f135ba623c7767}{\index{Vector3\+D@{Vector3\+D}!dot\+Product@{dot\+Product}}
+\index{dot\+Product@{dot\+Product}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{dot\+Product}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ float {\bf Vector3\+D}$<$ N $>$\+::dot\+Product (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_ae4b264f0d1cc18bbe4f135ba623c7767}
+
+
+Sets the X, Y \& Z values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_aa4ea93d3a84407ba621cdfb035592302}{\index{Vector3\+D@{Vector3\+D}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_aa4ea93d3a84407ba621cdfb035592302}
+
+
+Adds another vector to the current vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_ab83dcb3a0944eb24f08e2e5e49a50a81}{\index{Vector3\+D@{Vector3\+D}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const N}]{k\+Scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_ab83dcb3a0944eb24f08e2e5e49a50a81}
+
+
+Returns the value of the current vector divided by another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Scalar} & Numerical scalar vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a393c3f60e01027934288918874145bbb}{\index{Vector3\+D@{Vector3\+D}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$\& {\bf Vector3\+D}$<$ N $>$\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a393c3f60e01027934288918874145bbb}
+
+
+Returns the value of the current vector multiplied by another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a1ea6c7657591f53033fa520f07e424ed}{\index{Vector3\+D@{Vector3\+D}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a1ea6c7657591f53033fa520f07e424ed}
+
+
+Assigns the current vector minus another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a10d2178a6725fd7a198e3379f24b8079}{\index{Vector3\+D@{Vector3\+D}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const N}]{k\+Number}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a10d2178a6725fd7a198e3379f24b8079}
+
+
+Returns the value of the current vector plus another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Number} & Numberical value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_ada52c0527f56d8cdee2d5824fec98a26}{\index{Vector3\+D@{Vector3\+D}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$\& {\bf Vector3\+D}$<$ N $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_ada52c0527f56d8cdee2d5824fec98a26}
+
+
+Returns the value of the current vector plus a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_ae65b3804e658444200cc8434ac929984}{\index{Vector3\+D@{Vector3\+D}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_ae65b3804e658444200cc8434ac929984}
+
+
+Returns the square of the length of the vector3\+D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a3a49109e80f54f19488ab04e2e6a793d}{\index{Vector3\+D@{Vector3\+D}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const N}]{k\+Number}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a3a49109e80f54f19488ab04e2e6a793d}
+
+
+Returns the value of the current vector minus another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Number} & Numerical Value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a176342924211b76b6d91e20e6c8edca3}{\index{Vector3\+D@{Vector3\+D}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$\& {\bf Vector3\+D}$<$ N $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a176342924211b76b6d91e20e6c8edca3}
+
+
+Returns the value of the current vector minus a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a2d4d0cbc6bf028d71e1f78f5937c7f6d}{\index{Vector3\+D@{Vector3\+D}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a2d4d0cbc6bf028d71e1f78f5937c7f6d}
+
+
+Multiplies the current vector by another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a139ffe885d7d5d86a3f8e534e701d261}{\index{Vector3\+D@{Vector3\+D}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$ {\bf Vector3\+D}$<$ N $>$\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{const N}]{k\+Scalar}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a139ffe885d7d5d86a3f8e534e701d261}
+
+
+Returns the value of the current vector multiplied by a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Scalar} & Numerical scalar vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a6b236a0d11110d391c8b9832496d9b29}{\index{Vector3\+D@{Vector3\+D}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ {\bf Vector3\+D}$<$N$>$\& {\bf Vector3\+D}$<$ N $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a6b236a0d11110d391c8b9832496d9b29}
+
+
+Returns the value of the current vector divided by a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a829238079c28e7b21ffa2bbda90f084e}{\index{Vector3\+D@{Vector3\+D}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ bool {\bf Vector3\+D}$<$ N $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3\+D}$<$ N $>$ \&}]{k\+Other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a829238079c28e7b21ffa2bbda90f084e}
+
+
+Assigns the current vector to the values of another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Other} & Other vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_vector3_d_a81aa36b296f62c3b124198d52e06e88e}{\index{Vector3\+D@{Vector3\+D}!set@{set}}
+\index{set@{set}!Vector3\+D@{Vector3\+D}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N$>$ void {\bf Vector3\+D}$<$ N $>$\+::set (
+\begin{DoxyParamCaption}
+\item[{const N}]{k\+X, }
+\item[{const N}]{k\+Y, }
+\item[{const N}]{k\+Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vector3_d_a81aa36b296f62c3b124198d52e06e88e}
+
+\begin{DoxyParams}{Parameters}
+{\em k\+X} & X value \\
+\hline
+{\em k\+Y} & Y value \\
+\hline
+{\em k\+Z} & Z value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_vector3_d_8h}{Vector3\+D.\+h}\end{DoxyCompactItemize}

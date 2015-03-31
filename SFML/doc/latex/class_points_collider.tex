@@ -1,0 +1,75 @@
+\hypertarget{class_points_collider}{\section{Points\+Collider Class Reference}
+\label{class_points_collider}\index{Points\+Collider@{Points\+Collider}}
+}
+
+
+a class which inherits from the \hyperlink{class_body2_d}{Body2\+D} class and adds points to the player score when hit  
+
+
+
+
+{\ttfamily \#include $<$Points\+Collider.\+h$>$}
+
+Inheritance diagram for Points\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_points_collider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_points_collider_ad51a37d4026b09b8efef51e0098602aa}{Points\+Collider} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_physics_shape}{Physics\+Shape} $>$ kp\+Physics\+Shape, const int ki\+Collide\+Value, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_u_i_manager}{U\+I\+Manager} $>$ kp\+Manager)
+\item 
+virtual void \hyperlink{class_points_collider_ad24d2f1ba11e34a52e9caef300239de6}{collided} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \&kp\+Body)
+\begin{DoxyCompactList}\small\item\em A Method called when the body collides with another body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+a class which inherits from the \hyperlink{class_body2_d}{Body2\+D} class and adds points to the player score when hit 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_points_collider_ad51a37d4026b09b8efef51e0098602aa}{\index{Points\+Collider@{Points\+Collider}!Points\+Collider@{Points\+Collider}}
+\index{Points\+Collider@{Points\+Collider}!Points\+Collider@{Points\+Collider}}
+\subsubsection[{Points\+Collider}]{\setlength{\rightskip}{0pt plus 5cm}Points\+Collider\+::\+Points\+Collider (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Physics\+Shape} $>$}]{kp\+Physics\+Shape, }
+\item[{const int}]{ki\+Collide\+Value, }
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf U\+I\+Manager} $>$}]{kp\+Manager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_points_collider_ad51a37d4026b09b8efef51e0098602aa}
+
+\begin{DoxyParams}{Parameters}
+{\em kp\+Manager} & Constructor which takes a physics shape, a points value and a pointer to the points manager \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_points_collider_ad24d2f1ba11e34a52e9caef300239de6}{\index{Points\+Collider@{Points\+Collider}!collided@{collided}}
+\index{collided@{collided}!Points\+Collider@{Points\+Collider}}
+\subsubsection[{collided}]{\setlength{\rightskip}{0pt plus 5cm}void Points\+Collider\+::collided (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Body2\+D} $>$ \&}]{kp\+Body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_points_collider_ad24d2f1ba11e34a52e9caef300239de6}
+
+
+A Method called when the body collides with another body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kp\+Body} & A Method called when the body collides with another body \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_body2_d_a55c37afe7eaa21a51cb309a2f52e0fcc}{Body2\+D}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_points_collider_8h}{Points\+Collider.\+h}\item 
+src/\hyperlink{_points_collider_8cpp}{Points\+Collider.\+cpp}\end{DoxyCompactItemize}

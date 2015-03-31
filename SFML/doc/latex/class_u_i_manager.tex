@@ -1,0 +1,137 @@
+\hypertarget{class_u_i_manager}{\section{U\+I\+Manager Class Reference}
+\label{class_u_i_manager}\index{U\+I\+Manager@{U\+I\+Manager}}
+}
+
+
+Manages user interface and certain gameplay values.  
+
+
+
+
+{\ttfamily \#include $<$U\+I\+Manager.\+h$>$}
+
+Inheritance diagram for U\+I\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_i_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_u_i_manager_a32b72c377f864f7cd197e6ffe738142f}{\hyperlink{class_u_i_manager_a32b72c377f864f7cd197e6ffe738142f}{U\+I\+Manager} ()}\label{class_u_i_manager_a32b72c377f864f7cd197e6ffe738142f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_u_i_manager_a89c46c8540da2a38b859eaa5dfb4243a}{U\+I\+Manager} (sf\+::\+Font new\+Font)
+\begin{DoxyCompactList}\small\item\em Constructor which takes a font. \end{DoxyCompactList}\item 
+\hypertarget{class_u_i_manager_aeac3e2a8fd4ba49821ce653f4d2fa6b6}{\hyperlink{class_u_i_manager_aeac3e2a8fd4ba49821ce653f4d2fa6b6}{$\sim$\+U\+I\+Manager} ()}\label{class_u_i_manager_aeac3e2a8fd4ba49821ce653f4d2fa6b6}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{class_u_i_manager_afcb9f18d87b7e95ad5632bffeb48f56f}{void \hyperlink{class_u_i_manager_afcb9f18d87b7e95ad5632bffeb48f56f}{remove\+Life} ()}\label{class_u_i_manager_afcb9f18d87b7e95ad5632bffeb48f56f}
+
+\begin{DoxyCompactList}\small\item\em Remove a player life. \end{DoxyCompactList}\item 
+\hypertarget{class_u_i_manager_aff0a63e6d0d7ae9f26cdd415c3151f3f}{void \hyperlink{class_u_i_manager_aff0a63e6d0d7ae9f26cdd415c3151f3f}{new\+Game} ()}\label{class_u_i_manager_aff0a63e6d0d7ae9f26cdd415c3151f3f}
+
+\begin{DoxyCompactList}\small\item\em Setup for a new game. \end{DoxyCompactList}\item 
+void \hyperlink{class_u_i_manager_a910958d4ba0efde343fdaa041f550acd}{save\+File} () const 
+\begin{DoxyCompactList}\small\item\em Saves the highscore to a text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_u_i_manager_a783b2d2f87f16ea45875114f92856950}{add\+Points} (const unsigned int kui\+Add\+Points)
+\item 
+void \hyperlink{class_u_i_manager_a721a50436f0c9584b19ee646b407289e}{add\+Points\+Animated} (const unsigned int kui\+Add\+Points, const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Position)
+\begin{DoxyCompactList}\small\item\em Takes an unsigned integer and adds it to the player score. \end{DoxyCompactList}\item 
+\hypertarget{class_u_i_manager_a12ed6f32d28d232782c5bdbbb09b3c9f}{void \hyperlink{class_u_i_manager_a12ed6f32d28d232782c5bdbbb09b3c9f}{update} ()}\label{class_u_i_manager_a12ed6f32d28d232782c5bdbbb09b3c9f}
+
+\begin{DoxyCompactList}\small\item\em Updates the logic. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_u_i_manager_a5b561519f60c7b5e59c010794715b564}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\begin{DoxyCompactList}\small\item\em Draw the user interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_u_i_manager_a126f5ffe70cdd465e492f7af57c00b1e}{int \hyperlink{class_u_i_manager_a126f5ffe70cdd465e492f7af57c00b1e}{ui\+Lives}}\label{class_u_i_manager_a126f5ffe70cdd465e492f7af57c00b1e}
+
+\begin{DoxyCompactList}\small\item\em Player lives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages user interface and certain gameplay values. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_u_i_manager_a89c46c8540da2a38b859eaa5dfb4243a}{\index{U\+I\+Manager@{U\+I\+Manager}!U\+I\+Manager@{U\+I\+Manager}}
+\index{U\+I\+Manager@{U\+I\+Manager}!U\+I\+Manager@{U\+I\+Manager}}
+\subsubsection[{U\+I\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}U\+I\+Manager\+::\+U\+I\+Manager (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Font}]{new\+Font}
+\end{DoxyParamCaption}
+)}}\label{class_u_i_manager_a89c46c8540da2a38b859eaa5dfb4243a}
+
+
+Constructor which takes a font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Font} & Font value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_u_i_manager_a783b2d2f87f16ea45875114f92856950}{\index{U\+I\+Manager@{U\+I\+Manager}!add\+Points@{add\+Points}}
+\index{add\+Points@{add\+Points}!U\+I\+Manager@{U\+I\+Manager}}
+\subsubsection[{add\+Points}]{\setlength{\rightskip}{0pt plus 5cm}void U\+I\+Manager\+::add\+Points (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{kui\+Add\+Points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_u_i_manager_a783b2d2f87f16ea45875114f92856950}
+
+\begin{DoxyParams}{Parameters}
+{\em kui\+Add\+Points} & Points value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_u_i_manager_a721a50436f0c9584b19ee646b407289e}{\index{U\+I\+Manager@{U\+I\+Manager}!add\+Points\+Animated@{add\+Points\+Animated}}
+\index{add\+Points\+Animated@{add\+Points\+Animated}!U\+I\+Manager@{U\+I\+Manager}}
+\subsubsection[{add\+Points\+Animated}]{\setlength{\rightskip}{0pt plus 5cm}void U\+I\+Manager\+::add\+Points\+Animated (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{kui\+Add\+Points, }
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Position}
+\end{DoxyParamCaption}
+)}}\label{class_u_i_manager_a721a50436f0c9584b19ee646b407289e}
+
+
+Takes an unsigned integer and adds it to the player score. 
+
+Takes an unsigned integer and adds it to the player score and takes a \hyperlink{class_vector2_d}{Vector2\+D} to position the animated icon 
+\begin{DoxyParams}{Parameters}
+{\em kui\+Add\+Points} & Points value \\
+\hline
+{\em k\+Position} & Vector position \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_u_i_manager_a5b561519f60c7b5e59c010794715b564}{\index{U\+I\+Manager@{U\+I\+Manager}!draw@{draw}}
+\index{draw@{draw}!U\+I\+Manager@{U\+I\+Manager}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void U\+I\+Manager\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_u_i_manager_a5b561519f60c7b5e59c010794715b564}
+
+
+Draw the user interface. 
+
+$<$ Draw the user interface \hypertarget{class_u_i_manager_a910958d4ba0efde343fdaa041f550acd}{\index{U\+I\+Manager@{U\+I\+Manager}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!U\+I\+Manager@{U\+I\+Manager}}
+\subsubsection[{save\+File}]{\setlength{\rightskip}{0pt plus 5cm}void U\+I\+Manager\+::save\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_u_i_manager_a910958d4ba0efde343fdaa041f550acd}
+
+
+Saves the highscore to a text file. 
+
+$<$ Saves the highscore to a text file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_u_i_manager_8h}{U\+I\+Manager.\+h}\item 
+src/\hyperlink{_u_i_manager_8cpp}{U\+I\+Manager.\+cpp}\end{DoxyCompactItemize}

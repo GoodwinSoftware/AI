@@ -1,0 +1,142 @@
+\hypertarget{class_pinball_scene}{\section{Pinball\+Scene Class Reference}
+\label{class_pinball_scene}\index{Pinball\+Scene@{Pinball\+Scene}}
+}
+
+
+a class which manages game logic and stores game objects, inherits from the \hyperlink{class_game_scene}{Game\+Scene} class  
+
+
+
+
+{\ttfamily \#include $<$Pinball\+Scene.\+h$>$}
+
+Inheritance diagram for Pinball\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pinball_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pinball_scene_af6b0e0d7d9765249018dacccc9b4c681}{\hyperlink{class_pinball_scene_af6b0e0d7d9765249018dacccc9b4c681}{Pinball\+Scene} ()}\label{class_pinball_scene_af6b0e0d7d9765249018dacccc9b4c681}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a99056b13a1d355643b5e2284decc659b}{virtual void \hyperlink{class_pinball_scene_a99056b13a1d355643b5e2284decc659b}{update} ()}\label{class_pinball_scene_a99056b13a1d355643b5e2284decc659b}
+
+\begin{DoxyCompactList}\small\item\em Updates the game logic by the intveral. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pinball_scene_a57947a5d74f53f73a40df59de2c72078}{event} (sf\+::\+Event event)
+\begin{DoxyCompactList}\small\item\em Called when an S\+F\+M\+L event occurs passing the event variable. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_pinball_scene_adb8babf412aa47981951e55bacf66b03}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\begin{DoxyCompactList}\small\item\em Draw the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pinball_scene_ac42acaaab8d70b460aa8ed721951f951}{void \hyperlink{class_pinball_scene_ac42acaaab8d70b460aa8ed721951f951}{spawn\+New\+Ball} ()}\label{class_pinball_scene_ac42acaaab8d70b460aa8ed721951f951}
+
+\begin{DoxyCompactList}\small\item\em Spawn a new ball. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_ace817bd823f2382a604d26f3447df3a2}{void \hyperlink{class_pinball_scene_ace817bd823f2382a604d26f3447df3a2}{restart\+Game} ()}\label{class_pinball_scene_ace817bd823f2382a604d26f3447df3a2}
+
+\begin{DoxyCompactList}\small\item\em Restart the game. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a8d760114d715152b057be9ea678e95bf}{void \hyperlink{class_pinball_scene_a8d760114d715152b057be9ea678e95bf}{setup\+Objects} ()}\label{class_pinball_scene_a8d760114d715152b057be9ea678e95bf}
+
+\begin{DoxyCompactList}\small\item\em sets up the objects in the scene \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pinball_scene_a33388520907fb2e994252aab123487cc}{\hyperlink{_game_config_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State} \hyperlink{class_pinball_scene_a33388520907fb2e994252aab123487cc}{m\+\_\+\+Game\+State}}\label{class_pinball_scene_a33388520907fb2e994252aab123487cc}
+
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a620a2dbb8448ff4b9ed9b470e9d0faaa}{\hyperlink{class_sprite_manager}{Sprite\+Manager} \hyperlink{class_pinball_scene_a620a2dbb8448ff4b9ed9b470e9d0faaa}{m\+\_\+\+Sprite\+Manager}}\label{class_pinball_scene_a620a2dbb8448ff4b9ed9b470e9d0faaa}
+
+\begin{DoxyCompactList}\small\item\em Sprite manager for loading textures. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_aec50641fc82974b3edf02d1956098374}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_u_i_manager}{U\+I\+Manager} $>$ \hyperlink{class_pinball_scene_aec50641fc82974b3edf02d1956098374}{m\+\_\+p\+Ui\+Manager}}\label{class_pinball_scene_aec50641fc82974b3edf02d1956098374}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the points manager. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a0404c72469c589e6b93c38cfb31c747d}{\hyperlink{class_asteroid_field}{Asteroid\+Field} \hyperlink{class_pinball_scene_a0404c72469c589e6b93c38cfb31c747d}{m\+\_\+\+Asteroid\+Field}}\label{class_pinball_scene_a0404c72469c589e6b93c38cfb31c747d}
+
+\begin{DoxyCompactList}\small\item\em Field of asteroids. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a01c03b087726619b98865047f25e7476}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_ball}{Ball} $>$ \hyperlink{class_pinball_scene_a01c03b087726619b98865047f25e7476}{m\+\_\+p\+Ball}}\label{class_pinball_scene_a01c03b087726619b98865047f25e7476}
+
+\begin{DoxyCompactList}\small\item\em the player ball \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_ae9b2a7e5fe0e0334ac2e4a5238f8fe3f}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_ball}{Ball} $>$ \hyperlink{class_pinball_scene_ae9b2a7e5fe0e0334ac2e4a5238f8fe3f}{m\+\_\+p\+Black\+Hole}}\label{class_pinball_scene_ae9b2a7e5fe0e0334ac2e4a5238f8fe3f}
+
+\begin{DoxyCompactList}\small\item\em Blackhole. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a82759060543078ac218315d2a13618c1}{std\+::vector$<$ std\+::shared\+\_\+ptr\\*
+$<$ \hyperlink{class_orientated_box}{Orientated\+Box} $>$ $>$ \hyperlink{class_pinball_scene_a82759060543078ac218315d2a13618c1}{m\+\_\+p\+Boxes}}\label{class_pinball_scene_a82759060543078ac218315d2a13618c1}
+
+\begin{DoxyCompactList}\small\item\em Vector of orientated box. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a56a94580b385ae849a4f9e90632e6ba0}{std\+::vector$<$ std\+::shared\+\_\+ptr\\*
+$<$ \hyperlink{class_box}{Box} $>$ $>$ \hyperlink{class_pinball_scene_a56a94580b385ae849a4f9e90632e6ba0}{m\+\_\+p\+Walls}}\label{class_pinball_scene_a56a94580b385ae849a4f9e90632e6ba0}
+
+\begin{DoxyCompactList}\small\item\em Vector of non-\/orientated boxes. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a01f8eaffbfe7ba7f83f26006400a5e5c}{std\+::vector$<$ std\+::shared\+\_\+ptr\\*
+$<$ \hyperlink{class_circular_bumper}{Circular\+Bumper} $>$ $>$ \hyperlink{class_pinball_scene_a01f8eaffbfe7ba7f83f26006400a5e5c}{m\+\_\+p\+Bumpers}}\label{class_pinball_scene_a01f8eaffbfe7ba7f83f26006400a5e5c}
+
+\begin{DoxyCompactList}\small\item\em Vector of circular bumpers. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a1e5a61e23b78a270ce4ae4abecc4c85a}{sf\+::\+Texture \hyperlink{class_pinball_scene_a1e5a61e23b78a270ce4ae4abecc4c85a}{m\+\_\+\+Background\+Texture}}\label{class_pinball_scene_a1e5a61e23b78a270ce4ae4abecc4c85a}
+
+\begin{DoxyCompactList}\small\item\em Texture of the background. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a6c8d33874806f5c0cbc02fefd9aab5ba}{sf\+::\+Sprite \hyperlink{class_pinball_scene_a6c8d33874806f5c0cbc02fefd9aab5ba}{m\+\_\+\+Background\+Sprite}}\label{class_pinball_scene_a6c8d33874806f5c0cbc02fefd9aab5ba}
+
+\begin{DoxyCompactList}\small\item\em Sprite of. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a77725348869b92b1340bc31313d46911}{\hyperlink{class_pause_screen}{Pause\+Screen} \hyperlink{class_pinball_scene_a77725348869b92b1340bc31313d46911}{m\+\_\+\+Pause\+Screen}}\label{class_pinball_scene_a77725348869b92b1340bc31313d46911}
+
+\begin{DoxyCompactList}\small\item\em Games pause screen. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a825899b11e3635e68d4473f0e1b96966}{\hyperlink{class_paddle}{Paddle} \hyperlink{class_pinball_scene_a825899b11e3635e68d4473f0e1b96966}{m\+\_\+\+Paddle\+Left}}\label{class_pinball_scene_a825899b11e3635e68d4473f0e1b96966}
+
+\begin{DoxyCompactList}\small\item\em Left paddle. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_a2e32a793cac4b9c7aa64f3541acf71ed}{\hyperlink{class_paddle}{Paddle} \hyperlink{class_pinball_scene_a2e32a793cac4b9c7aa64f3541acf71ed}{m\+\_\+\+Paddle\+Right}}\label{class_pinball_scene_a2e32a793cac4b9c7aa64f3541acf71ed}
+
+\begin{DoxyCompactList}\small\item\em Right paddle. \end{DoxyCompactList}\item 
+\hypertarget{class_pinball_scene_ab19b6433abc3043db72f8bc11c75b2d3}{\hyperlink{class_spring}{Spring} \hyperlink{class_pinball_scene_ab19b6433abc3043db72f8bc11c75b2d3}{m\+\_\+\+Spring}}\label{class_pinball_scene_ab19b6433abc3043db72f8bc11c75b2d3}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_spring}{Spring} (ball launcher) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a class which manages game logic and stores game objects, inherits from the \hyperlink{class_game_scene}{Game\+Scene} class 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pinball_scene_adb8babf412aa47981951e55bacf66b03}{\index{Pinball\+Scene@{Pinball\+Scene}!draw@{draw}}
+\index{draw@{draw}!Pinball\+Scene@{Pinball\+Scene}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Pinball\+Scene\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pinball_scene_adb8babf412aa47981951e55bacf66b03}
+
+
+Draw the scene. 
+
+$<$ Draw the scene 
+
+Reimplemented from \hyperlink{class_game_scene}{Game\+Scene}.
+
+\hypertarget{class_pinball_scene_a57947a5d74f53f73a40df59de2c72078}{\index{Pinball\+Scene@{Pinball\+Scene}!event@{event}}
+\index{event@{event}!Pinball\+Scene@{Pinball\+Scene}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}void Pinball\+Scene\+::event (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_pinball_scene_a57947a5d74f53f73a40df59de2c72078}
+
+
+Called when an S\+F\+M\+L event occurs passing the event variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & S\+F\+M\+L event \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_game_scene_a9cf68fbf8e0805cbb1618a71e04d7fa4}{Game\+Scene}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_pinball_scene_8h}{Pinball\+Scene.\+h}\item 
+src/\hyperlink{_pinball_scene_8cpp}{Pinball\+Scene.\+cpp}\end{DoxyCompactItemize}

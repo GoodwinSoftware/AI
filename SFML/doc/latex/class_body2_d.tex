@@ -1,0 +1,497 @@
+\hypertarget{class_body2_d}{\section{Body2\+D Class Reference}
+\label{class_body2_d}\index{Body2\+D@{Body2\+D}}
+}
+
+
+A 2\+D physics body.  
+
+
+
+
+{\ttfamily \#include $<$Body2\+D.\+h$>$}
+
+Inheritance diagram for Body2\+D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_body2_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_body2_d_a41ad3e71b95dfc818b91a19ae091b5d9}{\hyperlink{class_body2_d_a41ad3e71b95dfc818b91a19ae091b5d9}{Body2\+D} ()}\label{class_body2_d_a41ad3e71b95dfc818b91a19ae091b5d9}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_body2_d_add81f8b764cd0903ad01685edf56665e}{Body2\+D} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_physics_shape}{Physics\+Shape} $>$ p\+Shape)
+\begin{DoxyCompactList}\small\item\em Constructor which takes physics shape pointer. \end{DoxyCompactList}\item 
+\hyperlink{class_body2_d_a0ea7045a305603b7cd38dfc5f611ebc9}{Body2\+D} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_physics_shape}{Physics\+Shape} $>$ p\+Shape, const float kf\+X, const float kf\+Y)
+\begin{DoxyCompactList}\small\item\em Constructor which takes physics shape pointer and position for X and Y. \end{DoxyCompactList}\item 
+\hyperlink{class_body2_d_a30838f1b90c3273d8c75ed815eaacb53}{Body2\+D} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_physics_shape}{Physics\+Shape} $>$ p\+Shape, const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Pos)
+\begin{DoxyCompactList}\small\item\em Constructor which takes physics shape pointer and position vector. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_ade39c095deccf7df714b42f64af3c00e}{float {\bfseries get\+Mass} () const }\label{class_body2_d_ade39c095deccf7df714b42f64af3c00e}
+
+\item 
+\hypertarget{class_body2_d_a5c24fc01e7288f03b1b64b254a752cb8}{float \hyperlink{class_body2_d_a5c24fc01e7288f03b1b64b254a752cb8}{get\+Attractive\+Value} () const }\label{class_body2_d_a5c24fc01e7288f03b1b64b254a752cb8}
+
+\begin{DoxyCompactList}\small\item\em Returns the mass of the object. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a186299396d4997908742dded5d038d08}{float \hyperlink{class_body2_d_a186299396d4997908742dded5d038d08}{get\+Inv\+Mass} () const }\label{class_body2_d_a186299396d4997908742dded5d038d08}
+
+\begin{DoxyCompactList}\small\item\em Returns the attractive value of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_acc065c0b756382f13e60007b3fb744cc}{float \hyperlink{class_body2_d_acc065c0b756382f13e60007b3fb744cc}{get\+Restitution} () const }\label{class_body2_d_acc065c0b756382f13e60007b3fb744cc}
+
+\begin{DoxyCompactList}\small\item\em Returns the inverse mass of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a5a134ecd508bf33e21e29daf6bef9752}{float \hyperlink{class_body2_d_a5a134ecd508bf33e21e29daf6bef9752}{get\+Friction} () const }\label{class_body2_d_a5a134ecd508bf33e21e29daf6bef9752}
+
+\begin{DoxyCompactList}\small\item\em Returns the restitution of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a26811630bb15275fd33548e20b5a65f2}{float \hyperlink{class_body2_d_a26811630bb15275fd33548e20b5a65f2}{get\+Density} () const }\label{class_body2_d_a26811630bb15275fd33548e20b5a65f2}
+
+\begin{DoxyCompactList}\small\item\em Return the friction value of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a3ef473f845ad2d8cbbc38b8afbaa5737}{float \hyperlink{class_body2_d_a3ef473f845ad2d8cbbc38b8afbaa5737}{get\+Gravity\+Scale} () const }\label{class_body2_d_a3ef473f845ad2d8cbbc38b8afbaa5737}
+
+\begin{DoxyCompactList}\small\item\em Returns the density of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_ab9a9164631ae99f75a3934ecadc8a940}{float \hyperlink{class_body2_d_ab9a9164631ae99f75a3934ecadc8a940}{get\+Angular\+Velocity} () const }\label{class_body2_d_ab9a9164631ae99f75a3934ecadc8a940}
+
+\begin{DoxyCompactList}\small\item\em Return the gravity scalar of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a8bbed510d49dc7f38ce35027af2e863b}{float \hyperlink{class_body2_d_a8bbed510d49dc7f38ce35027af2e863b}{get\+Angle\+Radians} () const }\label{class_body2_d_a8bbed510d49dc7f38ce35027af2e863b}
+
+\begin{DoxyCompactList}\small\item\em Returns the angular velocity of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a36eaf32fc309efd4e94261eff5c6b888}{float \hyperlink{class_body2_d_a36eaf32fc309efd4e94261eff5c6b888}{get\+Angle\+Degrees} () const }\label{class_body2_d_a36eaf32fc309efd4e94261eff5c6b888}
+
+\begin{DoxyCompactList}\small\item\em Returns the angle of the body in radians. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_ab533c98d0de3941202bf51b326cca07c}{float \hyperlink{class_body2_d_ab533c98d0de3941202bf51b326cca07c}{get\+Inv\+Inertia} () const }\label{class_body2_d_ab533c98d0de3941202bf51b326cca07c}
+
+\begin{DoxyCompactList}\small\item\em Returns the angle of the body converted to degrees. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a4aa31574a94a2f0662d9fc9466caf833}{bool \hyperlink{class_body2_d_a4aa31574a94a2f0662d9fc9466caf833}{get\+Is\+Static} () const }\label{class_body2_d_a4aa31574a94a2f0662d9fc9466caf833}
+
+\begin{DoxyCompactList}\small\item\em Returns the inverse inertia of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_aaa665f93d6c29015d30e79971a07bd9c}{bool \hyperlink{class_body2_d_aaa665f93d6c29015d30e79971a07bd9c}{get\+Is\+Collidable} () const }\label{class_body2_d_aaa665f93d6c29015d30e79971a07bd9c}
+
+\begin{DoxyCompactList}\small\item\em Returns true if the body is static. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_adb3f90843f11e83d9e6f26c4616f5027}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_body2_d_adb3f90843f11e83d9e6f26c4616f5027}{get\+Velocity} () const }\label{class_body2_d_adb3f90843f11e83d9e6f26c4616f5027}
+
+\begin{DoxyCompactList}\small\item\em Returns true if the body is collidable. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a60aa04d76d895a516e767ebcf448b8b3}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_physics_shape}{Physics\+Shape} $>$ \hyperlink{class_body2_d_a60aa04d76d895a516e767ebcf448b8b3}{get\+Physics\+Shape} () const }\label{class_body2_d_a60aa04d76d895a516e767ebcf448b8b3}
+
+\begin{DoxyCompactList}\small\item\em Returns the velocity of the body in meters per second. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_aa15cf4fc66cbde8f72e48d95b84b0617}{set\+Physics\+Shape} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_physics_shape}{Physics\+Shape} $>$ kp\+New\+Shape)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the physics shape. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_ad3578491d07b2632e86b0c15eb398a92}{set\+Attractive\+Value} (const float f\+New\+Value)
+\item 
+void \hyperlink{class_body2_d_ae527f69a23d2e396d66044be6b36bc53}{set\+Velocity} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+New\+Vel)
+\begin{DoxyCompactList}\small\item\em Sets the attrative value of the body. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a793004b49b70f1eddce4a38ad1335d7f}{set\+Friction} (const float kf\+New\+Friction)
+\begin{DoxyCompactList}\small\item\em Sets the velocity of the body. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a3c277f1520ac8724bf73db4f20928c66}{set\+Restitution} (const float kf\+New\+Restitution)
+\begin{DoxyCompactList}\small\item\em Sets the friction of the body. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_ad7afbaa626aa98692227a806551ad62e}{set\+Gravity\+Scale} (const float kf\+Gravity)
+\begin{DoxyCompactList}\small\item\em Sets the restituion of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a72e770d9b06aafd6c87c07b4b8fd3c88}{void \hyperlink{class_body2_d_a72e770d9b06aafd6c87c07b4b8fd3c88}{set\+Static\+Position} ()}\label{class_body2_d_a72e770d9b06aafd6c87c07b4b8fd3c88}
+
+\begin{DoxyCompactList}\small\item\em Sets the gravity scale of the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a2273e785cdd8ad462888dcedae504352}{void \hyperlink{class_body2_d_a2273e785cdd8ad462888dcedae504352}{set\+Static\+Rotation} ()}\label{class_body2_d_a2273e785cdd8ad462888dcedae504352}
+
+\begin{DoxyCompactList}\small\item\em Sets the body to a static position. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a860b912334bb0030928d127541fe1346}{void \hyperlink{class_body2_d_a860b912334bb0030928d127541fe1346}{set\+Collidable} ()}\label{class_body2_d_a860b912334bb0030928d127541fe1346}
+
+\begin{DoxyCompactList}\small\item\em Sets the body to a static rotation. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a3d8a3b351cc4bff945bf63855a59f3f7}{void \hyperlink{class_body2_d_a3d8a3b351cc4bff945bf63855a59f3f7}{set\+Non\+Collidable} ()}\label{class_body2_d_a3d8a3b351cc4bff945bf63855a59f3f7}
+
+\begin{DoxyCompactList}\small\item\em Sets the body to be a collidable. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a448afd0afe8ef2c165018623ba365bd8}{void \hyperlink{class_body2_d_a448afd0afe8ef2c165018623ba365bd8}{set\+Dynamic} ()}\label{class_body2_d_a448afd0afe8ef2c165018623ba365bd8}
+
+\begin{DoxyCompactList}\small\item\em Sets the body to be a non collidable. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a3eecaf97eb846f7a22afd326426ef976}{set\+Static} ()
+\begin{DoxyCompactList}\small\item\em Sets the body to dynamic. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a965fe7a6d920ffb1027dd691070cd842}{set\+Angle} (float f\+New\+Rad)
+\begin{DoxyCompactList}\small\item\em Sets the angle of the body in radians. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a7d14597b4f11c8343841038d29629e86}{set\+Angle\+Deg} (const float kf\+New\+Deg)
+\item 
+void \hyperlink{class_body2_d_a61efab7842abf77c748683d658930e62}{add\+Angle} (const float kf\+Rads)
+\begin{DoxyCompactList}\small\item\em Sets the angle of the body in degrees. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_adb2bf5ca96811517418044e13cd0d054}{set\+Density} (const float kf\+Density)
+\begin{DoxyCompactList}\small\item\em Sets the density of the body. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a55a924e33d60711a39888f92a10afbd1}{update} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Gravity)
+\begin{DoxyCompactList}\small\item\em Updates the body by the timestep passing the world gravity. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_afe9db9c16d070f5154d0ebc16bf08f44}{apply\+Impulse} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Impulse, const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Contact)
+\begin{DoxyCompactList}\small\item\em Applies an impulse to the body. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a87e9b9c0e07fe872cecc40c1afbf8480}{apply\+Positional\+Force} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Force)
+\item 
+void \hyperlink{class_body2_d_a26336b3683b7cbda826bba54b8feca7d}{apply\+Rotational\+Force} (const float kf\+Force)
+\begin{DoxyCompactList}\small\item\em Applies a force to the body. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_body2_d_a55c37afe7eaa21a51cb309a2f52e0fcc}{collided} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_body2_d}{Body2\+D} $>$ \&kp\+Other)
+\begin{DoxyCompactList}\small\item\em Applies a rotational force to the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_body2_d_a9bc86abec92a5f54009c44bddaaa5a72}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_rotation_matrix}{Rotation\+Matrix} $>$ \hyperlink{class_body2_d_a9bc86abec92a5f54009c44bddaaa5a72}{g\+\_\+p\+Matrix}}\label{class_body2_d_a9bc86abec92a5f54009c44bddaaa5a72}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the rotation matrix for the body. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_a4ef190415b59cd68d0e4ce6cf7d1b70e}{\hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \hyperlink{class_body2_d_a4ef190415b59cd68d0e4ce6cf7d1b70e}{g\+\_\+\+Position}}\label{class_body2_d_a4ef190415b59cd68d0e4ce6cf7d1b70e}
+
+\begin{DoxyCompactList}\small\item\em Position in Meters. \end{DoxyCompactList}\item 
+\hypertarget{class_body2_d_aeaef63e80b0dab7c7e57e0c2fe8b4c2a}{unsigned int \hyperlink{class_body2_d_aeaef63e80b0dab7c7e57e0c2fe8b4c2a}{g\+\_\+ui\+Tag}}\label{class_body2_d_aeaef63e80b0dab7c7e57e0c2fe8b4c2a}
+
+\begin{DoxyCompactList}\small\item\em Tag of the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_body2_d_a4499cdddbd429b901c76fd6c49680173}{set\+Mass} (const float kf\+New\+Mass)
+\begin{DoxyCompactList}\small\item\em Set the mass of the body. \end{DoxyCompactList}\item 
+void \hyperlink{class_body2_d_a174198d6fb7bd33d68b73f30c18826ef}{set\+Interia} (const float kf\+New\+Inertia)
+\begin{DoxyCompactList}\small\item\em Set the inertia of the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_body2_d_a5de7be8b20e630cb3431e2e30f0a4445}{\hyperlink{struct_material}{Material} \hyperlink{class_body2_d_a5de7be8b20e630cb3431e2e30f0a4445}{m\+\_\+\+Material}}\label{class_body2_d_a5de7be8b20e630cb3431e2e30f0a4445}
+
+\begin{DoxyCompactList}\small\item\em Physics material for body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 2\+D physics body. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_body2_d_add81f8b764cd0903ad01685edf56665e}{\index{Body2\+D@{Body2\+D}!Body2\+D@{Body2\+D}}
+\index{Body2\+D@{Body2\+D}!Body2\+D@{Body2\+D}}
+\subsubsection[{Body2\+D}]{\setlength{\rightskip}{0pt plus 5cm}Body2\+D\+::\+Body2\+D (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Physics\+Shape} $>$}]{p\+Shape}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_add81f8b764cd0903ad01685edf56665e}
+
+
+Constructor which takes physics shape pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Shape} & Physics shape pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a0ea7045a305603b7cd38dfc5f611ebc9}{\index{Body2\+D@{Body2\+D}!Body2\+D@{Body2\+D}}
+\index{Body2\+D@{Body2\+D}!Body2\+D@{Body2\+D}}
+\subsubsection[{Body2\+D}]{\setlength{\rightskip}{0pt plus 5cm}Body2\+D\+::\+Body2\+D (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Physics\+Shape} $>$}]{p\+Shape, }
+\item[{const float}]{kf\+X, }
+\item[{const float}]{kf\+Y}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_a0ea7045a305603b7cd38dfc5f611ebc9}
+
+
+Constructor which takes physics shape pointer and position for X and Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Shape} & Physics shape pointer \\
+\hline
+{\em kf\+X} & X position value \\
+\hline
+{\em kf\+Y} & Y position value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a30838f1b90c3273d8c75ed815eaacb53}{\index{Body2\+D@{Body2\+D}!Body2\+D@{Body2\+D}}
+\index{Body2\+D@{Body2\+D}!Body2\+D@{Body2\+D}}
+\subsubsection[{Body2\+D}]{\setlength{\rightskip}{0pt plus 5cm}Body2\+D\+::\+Body2\+D (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Physics\+Shape} $>$}]{p\+Shape, }
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Pos}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_a30838f1b90c3273d8c75ed815eaacb53}
+
+
+Constructor which takes physics shape pointer and position vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Shape} & Physics shape pointer \\
+\hline
+{\em k\+Pos} & Position value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_body2_d_a61efab7842abf77c748683d658930e62}{\index{Body2\+D@{Body2\+D}!add\+Angle@{add\+Angle}}
+\index{add\+Angle@{add\+Angle}!Body2\+D@{Body2\+D}}
+\subsubsection[{add\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::add\+Angle (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Rads}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_a61efab7842abf77c748683d658930e62}
+
+
+Sets the angle of the body in degrees. 
+
+Adds an angle to the body in radians 
+\begin{DoxyParams}{Parameters}
+{\em kf\+Rads} & Change in angle in radians \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_afe9db9c16d070f5154d0ebc16bf08f44}{\index{Body2\+D@{Body2\+D}!apply\+Impulse@{apply\+Impulse}}
+\index{apply\+Impulse@{apply\+Impulse}!Body2\+D@{Body2\+D}}
+\subsubsection[{apply\+Impulse}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::apply\+Impulse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Impulse, }
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Contact}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_afe9db9c16d070f5154d0ebc16bf08f44}
+
+
+Applies an impulse to the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Impulse} & Impulse Vector \\
+\hline
+{\em k\+Contact} & Point of contact \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a87e9b9c0e07fe872cecc40c1afbf8480}{\index{Body2\+D@{Body2\+D}!apply\+Positional\+Force@{apply\+Positional\+Force}}
+\index{apply\+Positional\+Force@{apply\+Positional\+Force}!Body2\+D@{Body2\+D}}
+\subsubsection[{apply\+Positional\+Force}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::apply\+Positional\+Force (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Force}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_a87e9b9c0e07fe872cecc40c1afbf8480}
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Force} & Force vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a26336b3683b7cbda826bba54b8feca7d}{\index{Body2\+D@{Body2\+D}!apply\+Rotational\+Force@{apply\+Rotational\+Force}}
+\index{apply\+Rotational\+Force@{apply\+Rotational\+Force}!Body2\+D@{Body2\+D}}
+\subsubsection[{apply\+Rotational\+Force}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::apply\+Rotational\+Force (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Force}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_a26336b3683b7cbda826bba54b8feca7d}
+
+
+Applies a force to the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+Force} & Rotational force \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a55c37afe7eaa21a51cb309a2f52e0fcc}{\index{Body2\+D@{Body2\+D}!collided@{collided}}
+\index{collided@{collided}!Body2\+D@{Body2\+D}}
+\subsubsection[{collided}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Body2\+D\+::collided (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Body2\+D} $>$ \&}]{kp\+Other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_body2_d_a55c37afe7eaa21a51cb309a2f52e0fcc}
+
+
+Applies a rotational force to the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kp\+Other} & Pointer to the body which it collided with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_points_collider_ad24d2f1ba11e34a52e9caef300239de6}{Points\+Collider}.
+
+\hypertarget{class_body2_d_a965fe7a6d920ffb1027dd691070cd842}{\index{Body2\+D@{Body2\+D}!set\+Angle@{set\+Angle}}
+\index{set\+Angle@{set\+Angle}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Angle (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+New\+Rad}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_a965fe7a6d920ffb1027dd691070cd842}
+
+
+Sets the angle of the body in radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+New\+Rad} & New angle in radians \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a7d14597b4f11c8343841038d29629e86}{\index{Body2\+D@{Body2\+D}!set\+Angle\+Deg@{set\+Angle\+Deg}}
+\index{set\+Angle\+Deg@{set\+Angle\+Deg}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Angle\+Deg}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Angle\+Deg (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+New\+Deg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_a7d14597b4f11c8343841038d29629e86}
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+New\+Deg} & New angle in degrees \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_ad3578491d07b2632e86b0c15eb398a92}{\index{Body2\+D@{Body2\+D}!set\+Attractive\+Value@{set\+Attractive\+Value}}
+\index{set\+Attractive\+Value@{set\+Attractive\+Value}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Attractive\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Attractive\+Value (
+\begin{DoxyParamCaption}
+\item[{const float}]{f\+New\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_ad3578491d07b2632e86b0c15eb398a92}
+
+\begin{DoxyParams}{Parameters}
+{\em f\+New\+Value} & New attractive value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_adb2bf5ca96811517418044e13cd0d054}{\index{Body2\+D@{Body2\+D}!set\+Density@{set\+Density}}
+\index{set\+Density@{set\+Density}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Density}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Density (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Density}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_adb2bf5ca96811517418044e13cd0d054}
+
+
+Sets the density of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+Density} & New density value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a793004b49b70f1eddce4a38ad1335d7f}{\index{Body2\+D@{Body2\+D}!set\+Friction@{set\+Friction}}
+\index{set\+Friction@{set\+Friction}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Friction}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Friction (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+New\+Friction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_a793004b49b70f1eddce4a38ad1335d7f}
+
+
+Sets the velocity of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+New\+Friction} & New friction value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_ad7afbaa626aa98692227a806551ad62e}{\index{Body2\+D@{Body2\+D}!set\+Gravity\+Scale@{set\+Gravity\+Scale}}
+\index{set\+Gravity\+Scale@{set\+Gravity\+Scale}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Gravity\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Gravity\+Scale (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+Gravity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_ad7afbaa626aa98692227a806551ad62e}
+
+
+Sets the restituion of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+Gravity} & New gravity scalar \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a174198d6fb7bd33d68b73f30c18826ef}{\index{Body2\+D@{Body2\+D}!set\+Interia@{set\+Interia}}
+\index{set\+Interia@{set\+Interia}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Interia}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Interia (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+New\+Inertia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_body2_d_a174198d6fb7bd33d68b73f30c18826ef}
+
+
+Set the inertia of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+New\+Inertia} & New inertia value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a4499cdddbd429b901c76fd6c49680173}{\index{Body2\+D@{Body2\+D}!set\+Mass@{set\+Mass}}
+\index{set\+Mass@{set\+Mass}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Mass}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Mass (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+New\+Mass}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_body2_d_a4499cdddbd429b901c76fd6c49680173}
+
+
+Set the mass of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+New\+Mass} & New mass value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_aa15cf4fc66cbde8f72e48d95b84b0617}{\index{Body2\+D@{Body2\+D}!set\+Physics\+Shape@{set\+Physics\+Shape}}
+\index{set\+Physics\+Shape@{set\+Physics\+Shape}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Physics\+Shape}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Physics\+Shape (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Physics\+Shape} $>$}]{kp\+New\+Shape}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_aa15cf4fc66cbde8f72e48d95b84b0617}
+
+
+Returns a pointer to the physics shape. 
+
+Sets the physics shape 
+\begin{DoxyParams}{Parameters}
+{\em kp\+New\+Shape} & Pointer to new physics shape \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a3c277f1520ac8724bf73db4f20928c66}{\index{Body2\+D@{Body2\+D}!set\+Restitution@{set\+Restitution}}
+\index{set\+Restitution@{set\+Restitution}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Restitution}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Restitution (
+\begin{DoxyParamCaption}
+\item[{const float}]{kf\+New\+Restitution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_a3c277f1520ac8724bf73db4f20928c66}
+
+
+Sets the friction of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kf\+New\+Restitution} & New restiution value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a3eecaf97eb846f7a22afd326426ef976}{\index{Body2\+D@{Body2\+D}!set\+Static@{set\+Static}}
+\index{set\+Static@{set\+Static}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Static}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Static (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_a3eecaf97eb846f7a22afd326426ef976}
+
+
+Sets the body to dynamic. 
+
+Sets the body to static \hypertarget{class_body2_d_ae527f69a23d2e396d66044be6b36bc53}{\index{Body2\+D@{Body2\+D}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Body2\+D@{Body2\+D}}
+\subsubsection[{set\+Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::set\+Velocity (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+New\+Vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_body2_d_ae527f69a23d2e396d66044be6b36bc53}
+
+
+Sets the attrative value of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+New\+Vel} & new velocity \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_body2_d_a55a924e33d60711a39888f92a10afbd1}{\index{Body2\+D@{Body2\+D}!update@{update}}
+\index{update@{update}!Body2\+D@{Body2\+D}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Body2\+D\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Gravity}
+\end{DoxyParamCaption}
+)}}\label{class_body2_d_a55a924e33d60711a39888f92a10afbd1}
+
+
+Updates the body by the timestep passing the world gravity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Gravity} & Gravity value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_body2_d_8h}{Body2\+D.\+h}\item 
+src/\hyperlink{body2_d_8cpp}{body2\+D.\+cpp}\end{DoxyCompactItemize}

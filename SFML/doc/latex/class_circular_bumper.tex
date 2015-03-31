@@ -1,0 +1,86 @@
+\hypertarget{class_circular_bumper}{\section{Circular\+Bumper Class Reference}
+\label{class_circular_bumper}\index{Circular\+Bumper@{Circular\+Bumper}}
+}
+
+
+a circular bumper which adds points to the score when hit  
+
+
+
+
+{\ttfamily \#include $<$Circular\+Bumper.\+h$>$}
+
+Inheritance diagram for Circular\+Bumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circular_bumper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_circular_bumper_a4b34986d6fa0dbaef189d87fac04ccfb}{\hyperlink{class_circular_bumper_a4b34986d6fa0dbaef189d87fac04ccfb}{Circular\+Bumper} ()}\label{class_circular_bumper_a4b34986d6fa0dbaef189d87fac04ccfb}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_circular_bumper_af51b2361c3e0851abf547ccd305fded0}{Circular\+Bumper} (const \hyperlink{class_vector2_d}{Vector2\+D}$<$ float $>$ \&k\+Pos, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_u_i_manager}{U\+I\+Manager} $>$ \&kp\+Point\+Counter, const unsigned int kui\+Pointvalue, const sf\+::\+Texture \&k\+Texture)
+\begin{DoxyCompactList}\small\item\em Constructor which takes a position, a pointer to the points manager, a point value and a texture. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_circular_bumper_a06077fa0e0bfdaa4b511cbd8f2a8c12d}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const 
+\begin{DoxyCompactList}\small\item\em Draw the bumper. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_circular_bumper_ade6659743e66c2e6db318753bef1e34a}{std\+::shared\+\_\+ptr$<$ \hyperlink{class_points_collider}{Points\+Collider} $>$ \hyperlink{class_circular_bumper_ade6659743e66c2e6db318753bef1e34a}{g\+\_\+p\+Body}}\label{class_circular_bumper_ade6659743e66c2e6db318753bef1e34a}
+
+\begin{DoxyCompactList}\small\item\em Pointer to physics body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a circular bumper which adds points to the score when hit 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_circular_bumper_af51b2361c3e0851abf547ccd305fded0}{\index{Circular\+Bumper@{Circular\+Bumper}!Circular\+Bumper@{Circular\+Bumper}}
+\index{Circular\+Bumper@{Circular\+Bumper}!Circular\+Bumper@{Circular\+Bumper}}
+\subsubsection[{Circular\+Bumper}]{\setlength{\rightskip}{0pt plus 5cm}Circular\+Bumper\+::\+Circular\+Bumper (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2\+D}$<$ float $>$ \&}]{k\+Pos, }
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf U\+I\+Manager} $>$ \&}]{kp\+Point\+Counter, }
+\item[{const unsigned int}]{kui\+Point\+Value, }
+\item[{const sf\+::\+Texture \&}]{text}
+\end{DoxyParamCaption}
+)}}\label{class_circular_bumper_af51b2361c3e0851abf547ccd305fded0}
+
+
+Constructor which takes a position, a pointer to the points manager, a point value and a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Pos} & Position value \\
+\hline
+{\em kp\+Point\+Counter} & Points manager \\
+\hline
+{\em kui\+Point\+Value} & Points value \\
+\hline
+{\em text} & Constructor which takes a position, a pointer to the points manager, a point value and a texture \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_circular_bumper_a06077fa0e0bfdaa4b511cbd8f2a8c12d}{\index{Circular\+Bumper@{Circular\+Bumper}!draw@{draw}}
+\index{draw@{draw}!Circular\+Bumper@{Circular\+Bumper}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Circular\+Bumper\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{states}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_circular_bumper_a06077fa0e0bfdaa4b511cbd8f2a8c12d}
+
+
+Draw the bumper. 
+
+$<$ Draw the Bumper 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_circular_bumper_8h}{Circular\+Bumper.\+h}\item 
+src/\hyperlink{_circular_bumper_8cpp}{Circular\+Bumper.\+cpp}\end{DoxyCompactItemize}
