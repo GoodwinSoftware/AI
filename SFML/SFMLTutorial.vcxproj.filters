@@ -25,11 +25,11 @@
     <Filter Include="Source Files\Helpers &amp; Basic Types">
       <UniqueIdentifier>{cecb2a32-3063-4549-aaaa-dbfda02346d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Fonts">
+      <UniqueIdentifier>{9b7467d4-8b87-4a06-89a2-f98b35e82d00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,11 +51,18 @@
     <ClCompile Include="src\SpriteManager.cpp">
       <Filter>Source Files\Helpers &amp; Basic Types</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="..\..\..\Downloads\open-sans\OpenSans-Regular.ttf">
-      <Filter>Resource Files</Filter>
-    </Font>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Message.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Character.cpp">
+      <Filter>Source Files\Helpers &amp; Basic Types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AIGrid.cpp">
+      <Filter>Source Files\Helpers &amp; Basic Types</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Scene.h">
@@ -88,5 +95,22 @@
     <ClInclude Include="include\Vector2.h">
       <Filter>Header Files\Helpers &amp; Basic Types</Filter>
     </ClInclude>
+    <ClInclude Include="include\Message.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Character.h">
+      <Filter>Header Files\Helpers &amp; Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Matrix.h">
+      <Filter>Header Files\Helpers &amp; Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AIGrid.h">
+      <Filter>Header Files\Helpers &amp; Basic Types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="fonts\OpenSans.ttf">
+      <Filter>Resource Files\Fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>

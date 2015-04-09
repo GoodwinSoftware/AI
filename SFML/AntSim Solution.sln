@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pinball", "SFMLTutorial.vcxproj", "{EF1AEC2E-0BB8-4065-B2FF-49C68AF3EF32}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest1", "UnitTest1\UnitTest1.vcxproj", "{ECF618B2-4F57-48C2-A086-7585E1833790}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AntSim", "SFMLTutorial.vcxproj", "{EF1AEC2E-0BB8-4065-B2FF-49C68AF3EF32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		{EF1AEC2E-0BB8-4065-B2FF-49C68AF3EF32}.Debug|Win32.Build.0 = Debug|Win32
 		{EF1AEC2E-0BB8-4065-B2FF-49C68AF3EF32}.Release|Win32.ActiveCfg = Release|Win32
 		{EF1AEC2E-0BB8-4065-B2FF-49C68AF3EF32}.Release|Win32.Build.0 = Release|Win32
-		{ECF618B2-4F57-48C2-A086-7585E1833790}.Debug|Win32.ActiveCfg = Debug|Win32
-		{ECF618B2-4F57-48C2-A086-7585E1833790}.Debug|Win32.Build.0 = Debug|Win32
-		{ECF618B2-4F57-48C2-A086-7585E1833790}.Release|Win32.ActiveCfg = Release|Win32
-		{ECF618B2-4F57-48C2-A086-7585E1833790}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

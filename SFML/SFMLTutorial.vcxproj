@@ -76,29 +76,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AIGrid.cpp" />
     <ClCompile Include="src\Ant.cpp" />
     <ClCompile Include="src\AntEater.cpp" />
+    <ClCompile Include="src\Character.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Message.cpp" />
     <ClCompile Include="src\Obsticle.cpp" />
     <ClCompile Include="src\Scene.cpp" />
     <ClCompile Include="src\SpriteGameObject.cpp" />
     <ClCompile Include="src\SpriteManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\..\..\Downloads\open-sans\OpenSans-Regular.ttf" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="include\AIGrid.h" />
     <ClInclude Include="include\Ant.h" />
     <ClInclude Include="include\AntEater.h" />
+    <ClInclude Include="include\Character.h" />
     <ClInclude Include="include\Config.h" />
     <ClInclude Include="include\Food.h" />
     <ClInclude Include="include\GameObject.h" />
+    <ClInclude Include="include\Matrix.h" />
+    <ClInclude Include="include\Message.h" />
     <ClInclude Include="include\Obsticle.h" />
     <ClInclude Include="include\Scene.h" />
     <ClInclude Include="include\SpriteGameObject.h" />
     <ClInclude Include="include\SpriteManager.h" />
     <ClInclude Include="include\Vector2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="fonts\OpenSans.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

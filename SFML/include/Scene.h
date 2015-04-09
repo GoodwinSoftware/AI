@@ -9,11 +9,16 @@
 #include "AntEater.h"
 #include "Ant.h"
 #include "Obsticle.h"
+#include "Message.h"
 
-class Scene {
+class Scene 
+{
 private:
 	sf::RenderWindow m_Window; //!< Game Window
 	sf::Clock m_gameTimer; //!< Game Timer
+
+	Message TestMessage; //!< Messages
+
 	float m_fAccumulator; //!< Time accumulator
     float m_fPreviousFrame; //!< Previous frame time
 
@@ -24,11 +29,13 @@ private:
 
 	void AddAnt(float fX, float fY);
 	void AddAntEater(float fX, float fY);
+	void CheckDeadAnts();
 	void DrawObjects();
 	void UpdateObjects();
 	void GameLoop();
 	void InputEvent();
 	void SetupObjects();
+
 public:
 	Scene();
 	~Scene();

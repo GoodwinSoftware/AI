@@ -1,9 +1,11 @@
 #include "GameObject.h"
 
-GameObject::GameObject() {
+GameObject::GameObject() 
+{
 	m_GameObjectType = UnassignedGO;
 }
 
-GameObject::~GameObject() {
+GameObject::~GameObject() 
+{
 	
 }

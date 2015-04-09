@@ -1,7 +1,8 @@
 #include "Scene.h"
 #include "Config.h"
 
-Scene::Scene() {
+Scene::Scene() 
+{
 	m_fAccumulator = 0.0f;
 	m_fPreviousFrame = 0.0f;
 
@@ -14,14 +15,8 @@ Scene::Scene() {
 	GameLoop();
 }
 
-Scene::~Scene() {
-
-}
-
-void Scene::SetupObjects() {
-	//Example of adding objects
-	AddAnt(50, 50);
-	AddAntEater(100, 50);
+Scene::~Scene() 
+{
 }
 
 void Scene::AddAnt(float fX, float fY)
@@ -39,19 +34,34 @@ void Scene::AddAntEater(float fX, float fY)
 	m_aAntEaters.back().SetTexture(m_TextureManager.getTexture(ANTEATER_IMAGE_NAME));
 }
 
-void Scene::GameLoop() {
-	while (m_Window.isOpen()) {
+void Scene::SetupObjects() 
+{
+	// Objects
+	AddAnt(50, 50);
+	AddAntEater(100, 50);
+
+	// Messages
+	TestMessage.SetMessage("Test1", sf::Color::Red, 32, WINDOW_WIDTH / 2, 40);
+}
+
+void Scene::GameLoop() 
+{
+	while (m_Window.isOpen()) 
+	{
 		InputEvent();
+
+		// Timer
 		const sf::Time kCurrentFrame = m_gameTimer.getElapsedTime();
         const float kfCurrentFrame = kCurrentFrame.asSeconds();
         m_fAccumulator += kfCurrentFrame - m_fPreviousFrame;
         m_fPreviousFrame = kfCurrentFrame;
     
-        if(m_fAccumulator > 0.1) {
+        if (m_fAccumulator > 0.1) 
+		{
             m_fAccumulator = 0.1f;
         }
 
-        while(m_fAccumulator > UPDATE_INTERVAL)
+        while (m_fAccumulator > UPDATE_INTERVAL)
 		{
 			UpdateObjects();
 			m_fAccumulator -= UPDATE_INTERVAL;
@@ -65,7 +75,8 @@ void Scene::GameLoop() {
 	}
 }
 
-void Scene::DrawObjects() {
+void Scene::DrawObjects() 
+{
 	//Draw the ant eaters
 	for (auto i = m_aAntEaters.begin(); i != m_aAntEaters.end(); i++)
 	{
@@ -82,6 +93,17 @@ void Scene::DrawObjects() {
 	for (auto i = m_aObsticles.begin(); i != m_aObsticles.end(); i++)
 	{
 		m_Window.draw(*i);
+	}
+
+	//Draw the example message
+	m_Window.draw(TestMessage);
+}
+
+void Scene::CheckDeadAnts()
+{
+	for (auto i = m_aAnts.begin(); i != m_aAnts.end(); i++)
+	{
+		
 	}
 }
 
@@ -100,16 +122,28 @@ void Scene::UpdateObjects()
 	}
 }
 
-void Scene::InputEvent() {
+void Scene::InputEvent() 
+{
 	sf::Event Event;
+
 	while (m_Window.pollEvent(Event))
 	{
-		if (Event.type == sf::Event::Closed) {
+		if (Event.type == sf::Event::Closed) 
+		{
 			m_Window.close();
-		} else if ((Event.type == sf::Event::KeyPressed)) {
-			if (Event.key.code == sf::Keyboard::Escape) {
+		} 
+		else if ((Event.type == sf::Event::KeyPressed)) 
+		{
+			if (Event.key.code == sf::Keyboard::Escape) 
+			{
 				m_Window.close();
 			}
+		} else if ((Event.type == sf::Event::MouseButtonPressed))
+		{
+			m_aAnts[0].GoToPosition(Vector2<float>(sf::Mouse::getPosition().x, sf::Mouse::getPosition().y));
+		} else if ((Event.type == sf::Event::MouseMoved))
+		{
+			m_aAnts[0].GoToPosition(Vector2<float>(sf::Mouse::getPosition().x, sf::Mouse::getPosition().y));
 		}
 	}
 }

@@ -1,15 +1,18 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-enum GameObjectType {
+enum GameObjectType 
+{
 	UnassignedGO = 0,
 	AntGO,
+	CharacterGO,
 	ObsticleGO,
 	FoodGO,
 	AntEaterGO,
 };
 
-class GameObject {
+class GameObject 
+{
 public:
 	GameObject();
 	~GameObject();

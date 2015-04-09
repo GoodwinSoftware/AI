@@ -13,5 +13,4 @@ AntEater::AntEater(sf::Texture texture)
 
 AntEater::~AntEater()
 {
-
 }

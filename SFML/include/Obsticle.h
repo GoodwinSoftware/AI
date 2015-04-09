@@ -3,7 +3,10 @@
 
 #include "SpriteGameObject.h"
 
-class Obsticle : public SpriteGameObject {
+class Obsticle : public SpriteGameObject 
+{
+private:
+
 public:
 	Obsticle();
 	Obsticle(sf::Texture textureIn); 

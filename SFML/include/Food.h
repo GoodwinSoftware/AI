@@ -5,6 +5,8 @@
 
 class Food : public SpriteGameObject 
 {
+private:
+
 public:
 	Food();
 	Food(sf::Texture textureIn);

@@ -26,7 +26,9 @@ public:
 	void UpdateGraphics(); //!< Updates the graphics of the object
 	void SetTexture(const sf::Texture& text); //!< Sets the texture of the object
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const; //!< Draw the Object
+
 protected:
+
 	void integrate();
 	sf::Texture m_texture; //!< Sprite texture
 	sf::Sprite m_Sprite; //!< Sprite of the game object

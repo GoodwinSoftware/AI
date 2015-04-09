@@ -1,4 +1,3 @@
-
 //
 // Disclamer:
 // ----------
@@ -10,9 +9,6 @@
 // computer.
 //
 // Your resource files (images, sounds, fonts, ...) are also copied to your
-/**
- @file main.cpp
- */
 
 #include "Scene.h"
 

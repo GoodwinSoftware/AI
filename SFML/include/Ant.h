@@ -1,9 +1,10 @@
 #ifndef ANT_H
 #define ANT_H
 
-#include "SpriteGameObject.h"
+#include "Character.h"
 
-class Ant : public SpriteGameObject {
+class Ant : public Character 
+{
 public:
 	Ant();
 	Ant(sf::Texture& text);
