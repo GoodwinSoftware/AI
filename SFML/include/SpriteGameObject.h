@@ -14,6 +14,7 @@ public:
 	void SetPosition(Vector2<float> newPos) { fPosition = newPos; };
 	void SetPosition(float fnewX, float fnewY) { fPosition = Vector2<float>(fnewX, fnewY); };
 	Vector2<float> getPosition() const { return fPosition; };
+	Vector2<float> getPositionCenter() const { return fPosition + Vector2<float>(m_texture.getSize().x /2, m_texture.getSize().y/2); };
 
 	void SetVelocity(Vector2<float> newVel) { fVelocity = newVel; };
 	void SetVelocity(float fnewX, float fnewY) { fVelocity = Vector2<float>(fnewX, fnewY); };

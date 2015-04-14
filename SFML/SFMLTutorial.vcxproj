@@ -84,6 +84,8 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Message.cpp" />
     <ClCompile Include="src\Obsticle.cpp" />
+    <ClCompile Include="src\Path.cpp" />
+    <ClCompile Include="src\PathFinder.cpp" />
     <ClCompile Include="src\Scene.cpp" />
     <ClCompile Include="src\SpriteGameObject.cpp" />
     <ClCompile Include="src\SpriteManager.cpp" />
@@ -96,9 +98,10 @@
     <ClInclude Include="include\Config.h" />
     <ClInclude Include="include\Food.h" />
     <ClInclude Include="include\GameObject.h" />
-    <ClInclude Include="include\Matrix.h" />
     <ClInclude Include="include\Message.h" />
     <ClInclude Include="include\Obsticle.h" />
+    <ClInclude Include="include\Path.h" />
+    <ClInclude Include="include\PathFinder.h" />
     <ClInclude Include="include\Scene.h" />
     <ClInclude Include="include\SpriteGameObject.h" />
     <ClInclude Include="include\SpriteManager.h" />

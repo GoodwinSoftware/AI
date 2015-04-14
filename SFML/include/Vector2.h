@@ -3,7 +3,7 @@
 
 #define _USE_MATH_DEFINES
 
-/*! \class Vector2D
+/*! \class Vector2
  \brief A 2D vector template
  */
 

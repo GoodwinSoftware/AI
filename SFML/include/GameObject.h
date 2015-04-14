@@ -1,15 +1,8 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-enum GameObjectType 
-{
-	UnassignedGO = 0,
-	AntGO,
-	CharacterGO,
-	ObsticleGO,
-	FoodGO,
-	AntEaterGO,
-};
+#include "Config.h"
+#include <memory>
 
 class GameObject 
 {

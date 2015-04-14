@@ -4,7 +4,15 @@ Character::Character()
 {
 	m_iHealth = 0;
 	m_fMovementSpeed = 0.0f;
-	m_DestinationPosition = Vector2<float>();
+	m_DestinationNode = Vector2<int>();
+}
+
+Character::Character(AIGrid* grid)
+{
+	m_SearchGrid = grid;
+	m_iHealth = 0;
+	m_fMovementSpeed = 0.0f;
+	m_DestinationNode = Vector2<int>();
 }
 
 Character::~Character()
@@ -12,27 +20,47 @@ Character::~Character()
 
 }
 
-void Character::GoToPosition(Vector2<float> newDest)
+void Character::SetNodePosition(Vector2<int> nodePos)
 {
-	Vector2<float> destDiff = getPosition() - newDest;
-    if (destDiff.x() == 0.0f || destDiff.y() == 0.0f) {
-        fAngle = 0;
-	} else {
-        fAngle = atan2(destDiff.y(), destDiff.x());
-    }
-	printf("Angle: %f \n", fAngle);
-    fAngle *= (180/ M_PI);
-	float sv = sinf(fAngle) * m_fMovementSpeed;
-	float sh = cosf(fAngle) * m_fMovementSpeed;
-	fAngle *= 2;
-	fAngle += 90;
-	printf("Angle: %f \n", fAngle);
-	SetVelocity(sv, -sh);
-	m_DestinationPosition = newDest;
+	SetPosition(m_SearchGrid->getPixelPosOfNodeCenter(nodePos));
+}
+
+void Character::setPath(Path newPath) { 
+	m_Path = newPath;
+	Vector2<int> currentNodePos = m_SearchGrid->getNodePositionFromPixelPosition(getPositionCenter());
+	printf("Path Start Pos: %i, %i \n", currentNodePos.x(), currentNodePos.y());
+	GoToNode(m_Path.getNextPosition());
+}
+
+void Character::GoToNode(Vector2<int> newDest)
+{
+	Vector2<int> currentNodePos = m_SearchGrid->getNodePositionFromPixelPosition(getPosition());
+	//Left
+	if (newDest.x() < currentNodePos.x())
+	{
+		fAngle = -90;
+		SetVelocity(-m_fMovementSpeed, 0);
+	} else if (newDest.x() > currentNodePos.x())
+	{
+		fAngle = 90;
+		SetVelocity(m_fMovementSpeed, 0);
+	} else if (newDest.y() > currentNodePos.y())
+	{
+		fAngle = 180;
+		SetVelocity(0, m_fMovementSpeed);
+	} else if (newDest.y() < currentNodePos.y())
+	{
+		fAngle = 0;
+		SetVelocity(0, -m_fMovementSpeed);
+	}
+	m_DestinationNode = newDest;
 }
 
 void Character::UpdateCharacterLogic() 
 {
-
+	if (m_SearchGrid->getNodePositionFromPixelPosition(getPosition()) == m_DestinationNode)
+	{
+		GoToNode(m_Path.getNextPosition());
+	}
 	UpdateGraphics();
 }

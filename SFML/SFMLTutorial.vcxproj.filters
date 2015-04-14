@@ -63,6 +63,12 @@
     <ClCompile Include="src\AIGrid.cpp">
       <Filter>Source Files\Helpers &amp; Basic Types</Filter>
     </ClCompile>
+    <ClCompile Include="src\PathFinder.cpp">
+      <Filter>Source Files\Helpers &amp; Basic Types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Path.cpp">
+      <Filter>Source Files\Helpers &amp; Basic Types</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Scene.h">
@@ -101,10 +107,13 @@
     <ClInclude Include="include\Character.h">
       <Filter>Header Files\Helpers &amp; Basic Types</Filter>
     </ClInclude>
-    <ClInclude Include="include\Matrix.h">
+    <ClInclude Include="include\AIGrid.h">
       <Filter>Header Files\Helpers &amp; Basic Types</Filter>
     </ClInclude>
-    <ClInclude Include="include\AIGrid.h">
+    <ClInclude Include="include\PathFinder.h">
+      <Filter>Header Files\Helpers &amp; Basic Types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Path.h">
       <Filter>Header Files\Helpers &amp; Basic Types</Filter>
     </ClInclude>
   </ItemGroup>

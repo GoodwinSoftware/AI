@@ -7,6 +7,7 @@ class Ant : public Character
 {
 public:
 	Ant();
+	Ant(AIGrid* grid);
 	Ant(sf::Texture& text);
 	~Ant();
 };
