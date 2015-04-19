@@ -1,49 +1,18 @@
-﻿Build started 14/04/2015 08:27:32.
-     1>Project "C:\Users\George\Documents\C++\AI-master\SFML\SFMLTutorial.vcxproj" on node 2 (Build target(s)).
+﻿Build started 19/04/2015 14:23:39.
+     1>Project "C:\Users\George\Desktop\AI-master (2)\AI-master\AI-master\SFML\SFMLTutorial.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\AIGrid.cpp src\Ant.cpp src\AntEater.cpp src\Character.cpp src\Main.cpp src\PathFinder.cpp src\Scene.cpp
-         AIGrid.cpp
-     1>C:\Users\George\Documents\C++\AI-master\SFML\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>C:\Users\George\Documents\C++\AI-master\SFML\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>src\AIGrid.cpp(82): warning C4244: 'argument' : conversion from 'float' to 'const int', possible loss of data
-     1>src\AIGrid.cpp(106): warning C4018: '<' : signed/unsigned mismatch
-     1>src\AIGrid.cpp(107): warning C4018: '<' : signed/unsigned mismatch
-     1>src\AIGrid.cpp(115): warning C4018: '<' : signed/unsigned mismatch
-     1>src\AIGrid.cpp(116): warning C4018: '<' : signed/unsigned mismatch
-         Ant.cpp
-     1>c:\users\george\documents\c++\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>src\Ant.cpp(7): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>src\Ant.cpp(14): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>src\Ant.cpp(24): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         AntEater.cpp
-     1>c:\users\george\documents\c++\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         Character.cpp
-     1>c:\users\george\documents\c++\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         Main.cpp
-     1>c:\users\george\documents\c++\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-         PathFinder.cpp
-     1>c:\users\george\documents\c++\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\Scene.cpp
          Scene.cpp
-     1>c:\users\george\documents\c++\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\george\documents\c++\ai-master\sfml\include\AIGrid.h(36): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
-     1>src\Scene.cpp(198): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
-     1>src\Scene.cpp(199): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>src\Scene.cpp(200): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>src\Scene.cpp(205): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>src\Scene.cpp(206): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\george\desktop\ai-master (2)\ai-master\ai-master\sfml\include\SpriteGameObject.h(17): warning C4244: 'argument' : conversion from 'unsigned int' to 'const float', possible loss of data
+     1>c:\users\george\desktop\ai-master (2)\ai-master\ai-master\sfml\include\AIGrid.h(34): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\george\desktop\ai-master (2)\ai-master\ai-master\sfml\include\AIGrid.h(35): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\Scene.cpp(206): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>src\Scene.cpp(207): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\Scene.cpp(208): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\Scene.cpp(213): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\Scene.cpp(214): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\George\Documents\C++\AI-master\SFML\Release\AntSim.exe" /NOLOGO "sfml-main.lib" "sfml-system.lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-audio.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\George\Documents\C++\AI-master\SFML\Release\AntSim.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\George\Documents\C++\AI-master\SFML\Release\AntSim.lib" /MACHINE:X86 /SAFESEH Release\AIGrid.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\George\Desktop\AI-master (2)\AI-master\AI-master\SFML\Release\AntSim.exe" /NOLOGO "sfml-main.lib" "sfml-system.lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-audio.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\George\Desktop\AI-master (2)\AI-master\AI-master\SFML\Release\AntSim.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\George\Desktop\AI-master (2)\AI-master\AI-master\SFML\Release\AntSim.lib" /MACHINE:X86 /SAFESEH Release\AIGrid.obj
          Release\Ant.obj
          Release\AntEater.obj
          Release\Character.obj
@@ -58,9 +27,9 @@
          Release\SpriteManager.obj
          Generating code
          Finished generating code
-         SFMLTutorial.vcxproj -> C:\Users\George\Documents\C++\AI-master\SFML\Release\AntSim.exe
-     1>Done Building Project "C:\Users\George\Documents\C++\AI-master\SFML\SFMLTutorial.vcxproj" (Build target(s)).
+         SFMLTutorial.vcxproj -> C:\Users\George\Desktop\AI-master (2)\AI-master\AI-master\SFML\Release\AntSim.exe
+     1>Done Building Project "C:\Users\George\Desktop\AI-master (2)\AI-master\AI-master\SFML\SFMLTutorial.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.81
+Time Elapsed 00:00:01.88

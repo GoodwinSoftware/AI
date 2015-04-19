@@ -2,6 +2,9 @@
 #include "Config.h"
 
 
+#define MAX_ANT_SPAWN 1
+#define SPAWN_INTERVAL 4.0
+
 Scene::Scene() 
 {
 	m_fAccumulator = 0.0f;
@@ -14,6 +17,7 @@ Scene::Scene()
 	m_GameState = GameState::StartScreen;
 
 	m_AIGrid = AIGrid();
+	//m_AIGrid.loadFromFile("level1.txt");
 
 	m_PathFinder = PathFinder(&m_AIGrid);
 	SetupObjects();
@@ -31,6 +35,7 @@ void Scene::AddAnt(float fX, float fY)
 	//m_aAnts.back().SetPosition(fX, fY);
 	m_aAnts.back().SetVelocity(10, 10);
 	m_aAnts.back().SetTexture(m_TextureManager.getTexture(ANT_IMAGE_NAME));
+	m_fPreviousAntSpawn = m_fCurrentFrame;
 }
 
 void Scene::AddAntEater(float fX, float fY)
@@ -43,9 +48,12 @@ void Scene::AddAntEater(float fX, float fY)
 void Scene::SetupObjects() 
 {
 	// Objects
+	m_CurrentFrame = m_gameTimer.getElapsedTime();
+	m_fCurrentFrame = m_CurrentFrame.asSeconds();
 	AddAnt(50, 50);
-	m_PathFinder.CharacterToNode(&m_aAnts.back(),  Vector2<int>(5, 10));
-	AddAntEater(100, 50);
+
+	//m_PathFinder.CharacterToNode(&m_aAnts.back(),  m_AIGrid.getClosestFood(m_AIGrid.getNodePositionFromPixelPosition(m_aAnts.back().getPosition())));
+	AddAntEater(-100, -100);
 
 	// Messages
 	StartScreenMessage.SetMessage("Click To Start", sf::Color::Red, 32, WINDOW_WIDTH / 2 - 92, 40);
@@ -73,12 +81,15 @@ void Scene::GameLoop()
 		{
 			// Timer
 			m_CurrentFrame = m_gameTimer.getElapsedTime();
-			// Timer
-			m_CurrentFrame = m_gameTimer.getElapsedTime();
 			m_fCurrentFrame = m_CurrentFrame.asSeconds();
 			 m_fAccumulator += m_fCurrentFrame - m_fPreviousFrame;
 			m_fPreviousFrame = m_fCurrentFrame;
-    
+			
+			if (m_aAnts.size() < MAX_ANT_SPAWN && (m_fCurrentFrame - m_fPreviousAntSpawn) >= SPAWN_INTERVAL)
+			{
+				AddAnt(50, 50);
+			}
+
 			if (m_fAccumulator > 0.1) 
 			{
 				m_fAccumulator = 0.1f;
@@ -91,8 +102,8 @@ void Scene::GameLoop()
 			}
 
 			DrawObjects();
-			s_Score = static_cast<std::ostringstream*>( &(std::ostringstream() << i_Score) )->str();
-			ScoreDisplay.SetMessage(s_Score, sf::Color::Blue, 32, 10, 10);
+			s_Score = static_cast<std::ostringstream*>( &(std::ostringstream() << m_AIGrid.iScore) )->str();
+			ScoreDisplay.SetMessage(s_Score, sf::Color::Blue, 32, WINDOW_WIDTH - 20, 10);
 			m_Window.draw(ScoreDisplay);
 		}
 		m_Window.display();
@@ -119,9 +130,6 @@ void Scene::DrawObjects()
 	{
 		m_Window.draw(*i);
 	}
-
-	//Draw the example message
-	m_Window.draw(TestMessage);
 }
 
 void Scene::CheckDeadAnts()
@@ -196,14 +204,14 @@ void Scene::InputEvent()
 				if (bAntEater == false)
 				{
 					m_aAntEaters[0].SetPosition(Vector2<float>(sf::Mouse::getPosition().x - 400, sf::Mouse::getPosition().y - 280));
-					m_fMarkX[0] = sf::Mouse::getPosition().x - 400; 
-					m_fMarkY[0] = sf::Mouse::getPosition().y - 280;
+					m_fMarkX[0] = sf::Mouse::getPosition().x - 800; 
+					m_fMarkY[0] = sf::Mouse::getPosition().y - 560;
 					m_fMarkTime = m_fCurrentFrame;
 					bAntEater = true;
 				}
 
 				m_fMarkX[1] = sf::Mouse::getPosition().x - 400; 
-				m_fMarkY[1] = sf::Mouse::getPosition().y - 280;
+				m_fMarkY[1] = sf::Mouse::getPosition().y - 560;
 			}
 			else if (m_GameState == GameState::StartScreen)
 			{

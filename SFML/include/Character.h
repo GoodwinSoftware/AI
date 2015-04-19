@@ -21,9 +21,13 @@ public:
 	bool IsCharacterDead() const { if (m_iHealth <= 0) return true; else return false; }; //!< Returns true if the character is dead
 
 	void SetNodePosition(Vector2<int> nodePos);
+
 	void UpdateCharacterLogic();
-	void setPath(Path newPath);
+	void setPath(Path newPath, Vector2<int> finalPos);
 protected:
+	bool m_bIsIdle;
+	virtual void CharacterLogic() {};
+
 	AIGrid* m_SearchGrid;
 
 	int m_iHealth; //!< Character Health
@@ -31,6 +35,7 @@ protected:
 	Path m_Path;
 	void GoToNode(Vector2<int> newDest);
 	Vector2<int> m_DestinationNode; //!< Character destination vector
+	Vector2<int> m_GoalDestinationNode; 
 };
 
 #endif

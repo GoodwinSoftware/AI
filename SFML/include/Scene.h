@@ -36,6 +36,7 @@ private:
 	float m_fCurrentFrame; //!< Current frame (as float)
 	float m_fAccumulator; //!< Time accumulator
     float m_fPreviousFrame; //!< Previous frame time
+	float m_fPreviousAntSpawn; //!< Previous ant spwan time
 
 	float m_fMarkTime; //!< Marks the time for ant eater
 	float m_fMarkX[2], m_fMarkY[2]; //!< Marks the x and y position for ant eater movement

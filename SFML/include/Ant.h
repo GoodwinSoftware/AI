@@ -10,6 +10,9 @@ public:
 	Ant(AIGrid* grid);
 	Ant(sf::Texture& text);
 	~Ant();
+protected:
+	bool m_bHasFood;
+	virtual void CharacterLogic();
 };
 
 #endif

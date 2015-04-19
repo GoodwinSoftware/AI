@@ -17,12 +17,13 @@ PathFinder::PathFinder(AIGrid* grid)
 
 void PathFinder::CharacterToNode(Character* character, Vector2<int> endPos)
 {
-	character->setPath(FindPath(m_SearchGrid->getNodePositionFromPixelPosition(character->getPosition()), endPos));
+	character->setPath(FindPath(m_SearchGrid->getNodePositionFromPixelPosition(character->getPosition()), endPos), endPos);
 }
 
 void PathFinder::CharacterToLocation(Character* character, Vector2<float> endPixelPos)
 {
-	character->setPath(FindPath(m_SearchGrid->getNodePositionFromPixelPosition(character->getPosition()), m_SearchGrid->getNodePositionFromPixelPosition(endPixelPos)));
+	Vector2<int> destinationPoint =  m_SearchGrid->getNodePositionFromPixelPosition(endPixelPos);
+	character->setPath(FindPath(m_SearchGrid->getNodePositionFromPixelPosition(character->getPosition()), destinationPoint), destinationPoint);
 }
 
 Path PathFinder::FindPath(Vector2<int> startPos, Vector2<int> endPos)
